@@ -1,0 +1,29 @@
+/* IOS Slider by Ioannis Sannos (http://www.isopensource.com */
+.iosslider_nav { margin:0; padding:0; list-style:none; text-indent:0; }
+.iosslider_nav li { list-style:none; margin:0 4px 4px 0; padding:0; float:left; }
+a.iosslider_trig { margin:0; padding:0; border:none; text-decoration:none; outline:none; }
+.iosslider_nav a img, a.iosslider_trig img { border:1px solid #ccc; background-color:#fff; padding:2px; margin:0; opacity:0.8; }
+.iosslider_nav a:hover img, a.iosslider_trig:hover img { opacity:1.0; }
+.iosslider_nav a.iosslcurrent img, a.iosslcurrent img { border:1px solid #333; opacity:1.0; }
+.iosslider_vnav { margin:0 0 0 10px; padding:0; list-style:none; text-indent:0; float:left; }
+.iosslider_vnav li { list-style:none; margin:0; padding:0; display: block; }
+.iosslider_vnav a img, a.iosslider_trig img { border:1px solid #ccc; background-color:#fff; padding:2px; margin:0; opacity:0.8; }
+.iosslider_vnav a:hover img, a.iosslider_trig:hover img { opacity:1.0; }
+.iosslider_vnav a.iosslcurrent img, a.iosslcurrent img { border:1px solid #333; opacity:1.0; }
+.iosslider_wrap { margin:0 0 10px 0; padding:0; clear:both; overflow:hidden; }
+.iosslider_caption {
+	position: absolute; bottom:3px; min-height:40px; left:0px; width:100%; padding:4px 0; margin:0;
+	background-color:#222; opacity:0.6; font: bold 14px/18px tahoma, arial, sans-serif; color:#fff;
+}
+.iosslider_caption span { font:normal 13px/17px tahoma, arial, sans-serif; color:#fff; }
+.iosslider, .iosslider .iospanel { margin:0; padding:0; width:500px; } 
+.iospanel-wrapper { margin:0; padding:0; position:relative; }
+.iospanel-wrapper p { margin:0; padding:0; text-align:left; }
+.iosslider p.loading { margin:0; padding:0; text-align:center; }
+.ios-nav ul { clear:both; display:block; margin:auto; overflow:hidden; }
+.ios-nav ul li { display:inline; }
+.ios-nav ul li a { background:#000; color:#fff; display:block; float:left; margin-right:1px; padding:3px 6px; text-decoration:none; }
+.iosslider { float:left; overflow:hidden; position:relative; }
+.iosslider .iospanel { display:block; float:left; }
+.iosslider .iospanel-container { position:relative; }
+.iosslider_nav a, .iosslider_vnav a { float:none; margin:0; padding:0; outline:none; }

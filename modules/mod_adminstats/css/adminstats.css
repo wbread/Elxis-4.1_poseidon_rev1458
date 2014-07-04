@@ -1,0 +1,197 @@
+/**
+Elxis CMS
+Module admin stats
+Date: 2012-03-30
+Author: Ioannis Sannos
+A liquid percentage width statistics grid
+*/
+
+.stats_wrap { margin:10px 0; padding:0 10px 0 0; background-color:#fff; border:1px solid #ccc; }
+.statsgrid28, .statsgrid29, .statsgrid30, .statsgrid31 {
+	position:relative; margin:0; padding:0; width:100%; height:250px; border:0px solid #fff;
+	background:#fff url(fauxgrid31.png) 0 0 no-repeat scroll; background-size:100% 250px; background-origin: border;
+}
+.statsgrid28 { background-image:url(fauxgrid28.png); }
+.statsgrid29 { background-image:url(fauxgrid29.png); }
+.statsgrid30 { background-image:url(fauxgrid30.png); }
+
+.stats_y0 { position:absolute; left:10px; top: 212px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.stats_y20 { position:absolute; left:10px; top: 172px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.stats_y40 { position:absolute; left:10px; top: 132px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.stats_y60 { position:absolute; left:10px; top: 92px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.stats_y80 { position:absolute; left:10px; top: 52px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.stats_y100 { position:absolute; left:10px; top: 12px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+
+.stats_x { margin:0; padding:0; border:none; list-style:none; position:absolute; left:0; bottom:30px; width:100%; }
+.stats_x li {
+	position:absolute; bottom:0; left:0; margin:0; padding:0; border:none; list-style:none; float:left; width:3% !important; height:1px;
+	background-color:#99CCFF; font:normal 10px/13px tahoma, verdana, serif; color:#444; text-align:center; vertical-align:top; border:none; overflow:hidden;
+}
+
+.stats_x li.stats_day1 { left: 7%; }
+.stats_x li.stats_day2 { left: 10%; }
+.stats_x li.stats_day3 { left: 13%; }
+.stats_x li.stats_day4 { left: 16%; }
+.stats_x li.stats_day5 { left: 19%; }
+.stats_x li.stats_day6 { left: 22%; }
+.stats_x li.stats_day7 { left: 25%; }
+.stats_x li.stats_day8 { left: 28%; }
+.stats_x li.stats_day9 { left: 31%; }
+.stats_x li.stats_day10 { left: 34%; }
+.stats_x li.stats_day11 { left: 37%; }
+.stats_x li.stats_day12 { left: 40%; }
+.stats_x li.stats_day13 { left: 43%; }
+.stats_x li.stats_day14 { left: 46%; }
+.stats_x li.stats_day15 { left: 49%; }
+.stats_x li.stats_day16 { left: 52%; }
+.stats_x li.stats_day17 { left: 55%; }
+.stats_x li.stats_day18 { left: 58%; }
+.stats_x li.stats_day19 { left: 61%; }
+.stats_x li.stats_day20 { left: 64%; }
+.stats_x li.stats_day21 { left: 67%; }
+.stats_x li.stats_day22 { left: 70%; }
+.stats_x li.stats_day23 { left: 73%; }
+.stats_x li.stats_day24 { left: 76%; }
+.stats_x li.stats_day25 { left: 79%; }
+.stats_x li.stats_day26 { left: 82%; }
+.stats_x li.stats_day27 { left: 85%; }
+.stats_x li.stats_day28 { left: 88%; }
+.stats_x li.stats_day29 { left: 91%; }
+.stats_x li.stats_day30 { left: 94%; }
+.stats_x li.stats_day31 { left: 97%; }
+
+.stats_x li.stats_altday1 { left: 7%; background-color: #b3d8fd; }
+.stats_x li.stats_altday2 { left: 10%; background-color: #b3d8fd; }
+.stats_x li.stats_altday3 { left: 13%; background-color: #b3d8fd; }
+.stats_x li.stats_altday4 { left: 16%; background-color: #b3d8fd; }
+.stats_x li.stats_altday5 { left: 19%; background-color: #b3d8fd; }
+.stats_x li.stats_altday6 { left: 22%; background-color: #b3d8fd; }
+.stats_x li.stats_altday7 { left: 25%; background-color: #b3d8fd; }
+.stats_x li.stats_altday8 { left: 28%; background-color: #b3d8fd; }
+.stats_x li.stats_altday9 { left: 31%; background-color: #b3d8fd; }
+.stats_x li.stats_altday10 { left: 34%; background-color: #b3d8fd; }
+.stats_x li.stats_altday11 { left: 37%; background-color: #b3d8fd; }
+.stats_x li.stats_altday12 { left: 40%; background-color: #b3d8fd; }
+.stats_x li.stats_altday13 { left: 43%; background-color: #b3d8fd; }
+.stats_x li.stats_altday14 { left: 46%; background-color: #b3d8fd; }
+.stats_x li.stats_altday15 { left: 49%; background-color: #b3d8fd; }
+.stats_x li.stats_altday16 { left: 52%; background-color: #b3d8fd; }
+.stats_x li.stats_altday17 { left: 55%; background-color: #b3d8fd; }
+.stats_x li.stats_altday18 { left: 58%; background-color: #b3d8fd; }
+.stats_x li.stats_altday19 { left: 61%; background-color: #b3d8fd; }
+.stats_x li.stats_altday20 { left: 64%; background-color: #b3d8fd; }
+.stats_x li.stats_altday21 { left: 67%; background-color: #b3d8fd; }
+.stats_x li.stats_altday22 { left: 70%; background-color: #b3d8fd; }
+.stats_x li.stats_altday23 { left: 73%; background-color: #b3d8fd; }
+.stats_x li.stats_altday24 { left: 76%; background-color: #b3d8fd; }
+.stats_x li.stats_altday25 { left: 79%; background-color: #b3d8fd; }
+.stats_x li.stats_altday26 { left: 82%; background-color: #b3d8fd; }
+.stats_x li.stats_altday27 { left: 85%; background-color: #b3d8fd; }
+.stats_x li.stats_altday28 { left: 88%; background-color: #b3d8fd; }
+.stats_x li.stats_altday29 { left: 91%; background-color: #b3d8fd; }
+.stats_x li.stats_altday30 { left: 94%; background-color: #b3d8fd; }
+.stats_x li.stats_altday31 { left: 97%; background-color: #b3d8fd; }
+
+.stats_x li.stats_pc0 { height:1px; }
+.stats_x li.stats_pc1 { height:2px; }
+.stats_x li.stats_pc2 { height:4px; }
+.stats_x li.stats_pc3 { height:6px; }
+.stats_x li.stats_pc4 { height:8px; }
+.stats_x li.stats_pc5 { height:10px; }
+.stats_x li.stats_pc6 { height:12px; }
+.stats_x li.stats_pc7 { height:14px; }
+.stats_x li.stats_pc8 { height:16px; }
+.stats_x li.stats_pc9 { height:18px; }
+.stats_x li.stats_pc10 { height:20px; }
+.stats_x li.stats_pc11 { height:22px; }
+.stats_x li.stats_pc12 { height:24px; }
+.stats_x li.stats_pc13 { height:26px; }
+.stats_x li.stats_pc14 { height:28px; }
+.stats_x li.stats_pc15 { height:30px; }
+.stats_x li.stats_pc16 { height:32px; }
+.stats_x li.stats_pc17 { height:34px; }
+.stats_x li.stats_pc18 { height:36px; }
+.stats_x li.stats_pc19 { height:38px; }
+.stats_x li.stats_pc20 { height:40px; }
+.stats_x li.stats_pc21 { height:42px; }
+.stats_x li.stats_pc22 { height:44px; }
+.stats_x li.stats_pc23 { height:46px; }
+.stats_x li.stats_pc24 { height:48px; }
+.stats_x li.stats_pc25 { height:50px; }
+.stats_x li.stats_pc26 { height:52px; }
+.stats_x li.stats_pc27 { height:54px; }
+.stats_x li.stats_pc28 { height:56px; }
+.stats_x li.stats_pc29 { height:58px; }
+.stats_x li.stats_pc30 { height:60px; }
+.stats_x li.stats_pc31 { height:62px; }
+.stats_x li.stats_pc32 { height:64px; }
+.stats_x li.stats_pc33 { height:66px; }
+.stats_x li.stats_pc34 { height:68px; }
+.stats_x li.stats_pc35 { height:70px; }
+.stats_x li.stats_pc36 { height:72px; }
+.stats_x li.stats_pc37 { height:74px; }
+.stats_x li.stats_pc38 { height:76px; }
+.stats_x li.stats_pc39 { height:78px; }
+.stats_x li.stats_pc40 { height:80px; }
+.stats_x li.stats_pc41 { height:82px; }
+.stats_x li.stats_pc42 { height:84px; }
+.stats_x li.stats_pc43 { height:86px; }
+.stats_x li.stats_pc44 { height:88px; }
+.stats_x li.stats_pc45 { height:90px; }
+.stats_x li.stats_pc46 { height:92px; }
+.stats_x li.stats_pc47 { height:94px; }
+.stats_x li.stats_pc48 { height:96px; }
+.stats_x li.stats_pc49 { height:98px; }
+.stats_x li.stats_pc50 { height:100px; }
+.stats_x li.stats_pc51 { height:102px; }
+.stats_x li.stats_pc52 { height:104px; }
+.stats_x li.stats_pc53 { height:106px; }
+.stats_x li.stats_pc54 { height:108px; }
+.stats_x li.stats_pc55 { height:110px; }
+.stats_x li.stats_pc56 { height:112px; }
+.stats_x li.stats_pc57 { height:114px; }
+.stats_x li.stats_pc58 { height:116px; }
+.stats_x li.stats_pc59 { height:118px; }
+.stats_x li.stats_pc60 { height:120px; }
+.stats_x li.stats_pc61 { height:122px; }
+.stats_x li.stats_pc62 { height:124px; }
+.stats_x li.stats_pc63 { height:126px; }
+.stats_x li.stats_pc64 { height:128px; }
+.stats_x li.stats_pc65 { height:130px; }
+.stats_x li.stats_pc66 { height:132px; }
+.stats_x li.stats_pc67 { height:134px; }
+.stats_x li.stats_pc68 { height:136px; }
+.stats_x li.stats_pc69 { height:138px; }
+.stats_x li.stats_pc70 { height:140px; }
+.stats_x li.stats_pc71 { height:142px; }
+.stats_x li.stats_pc72 { height:144px; }
+.stats_x li.stats_pc73 { height:146px; }
+.stats_x li.stats_pc74 { height:148px; }
+.stats_x li.stats_pc75 { height:150px; }
+.stats_x li.stats_pc76 { height:152px; }
+.stats_x li.stats_pc77 { height:154px; }
+.stats_x li.stats_pc78 { height:156px; }
+.stats_x li.stats_pc79 { height:158px; }
+.stats_x li.stats_pc80 { height:160px; }
+.stats_x li.stats_pc81 { height:162px; }
+.stats_x li.stats_pc82 { height:164px; }
+.stats_x li.stats_pc83 { height:166px; }
+.stats_x li.stats_pc84 { height:168px; }
+.stats_x li.stats_pc85 { height:170px; }
+.stats_x li.stats_pc86 { height:172px; }
+.stats_x li.stats_pc87 { height:174px; }
+.stats_x li.stats_pc88 { height:176px; }
+.stats_x li.stats_pc89 { height:178px; }
+.stats_x li.stats_pc90 { height:180px; }
+.stats_x li.stats_pc91 { height:182px; }
+.stats_x li.stats_pc92 { height:184px; }
+.stats_x li.stats_pc93 { height:186px; }
+.stats_x li.stats_pc94 { height:188px; }
+.stats_x li.stats_pc95 { height:190px; }
+.stats_x li.stats_pc96 { height:192px; }
+.stats_x li.stats_pc97 { height:194px; }
+.stats_x li.stats_pc98 { height:196px; }
+.stats_x li.stats_pc99 { height:198px; }
+.stats_x li.stats_pc100 { height:200px; }
+
+.stats_x li:hover { background-color:#3366FF; color:#fff; }

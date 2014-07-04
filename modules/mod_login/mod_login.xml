@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_login</name>
+	<title>Login</title>
+	<created>2013-02-22 20:00:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.1</version>
+	<description><![CDATA[Displays a login or logout form. Users can login with one of the available published Authentication Methods.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">user</package>
+	</dependencies>
+	<params group="GENERAL" collapsed="0">
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+		<param type="radio" name="cache" default="0" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+	</params>
+	<params group="LOGIN" collapsed="0">
+		<param type="radio" name="ext_auths" default="1" label="EXT_AUTH_METHODS" description="EXT_AUTH_METHODS_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="auth_help" default="1" label="AUTH_HELP" description="AUTH_HELP_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="icon_w" default="32" dir="ltr" label="ICON_WIDTH" description="ICON_WIDTH_DESC">
+			<option value="16">16</option>
+			<option value="24">24</option>
+			<option value="32">32</option>
+		</param>
+		<param type="list" name="login_redir" default="0" label="LOGIN_REDIRECT" dir="rtl" description="LOGIN_REDIRECT_DESC">
+			<option value="0">USERS_CENTRAL</option>
+			<option value="1">SAME_PAGE</option>
+		</param>
+		<param name="pretext" type="textarea" dir="rtl" cols="50" rows="5" default="" label="PRETEXT" description="PRETEXT_DESC" />
+		<param name="posttext" type="textarea" dir="rtl" cols="50" rows="5" default="" label="POSTTEXT" description="POSTTEXT_DESC" />
+	</params>
+	<params group="LOGOUT" collapsed="0">
+		<param type="list" name="displayname" default="0" dir="rtl" label="DISPLAY_NAME" description="DISPLAY_NAME_DESC">
+			<option value="0">AUTOMATIC</option>
+			<option value="1">FULLNAME</option>
+			<option value="2">USERNAME</option>
+		</param>
+		<param type="radio" name="avatar" default="1" label="SHOW_AVATAR" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="avatar_w" default="40" dir="ltr" label="AVATAR_WIDTH" description="AVATAR_WIDTH_DESC">
+			<option value="30">30</option>
+			<option value="40">40</option>
+			<option value="50">50</option>
+			<option value="60">60</option>
+			<option value="70">70</option>
+			<option value="80">80</option>
+			<option value="90">90</option>
+			<option value="100">100</option>
+			<option value="110">110</option>
+			<option value="120">120</option>
+		</param>
+		<param type="radio" name="gravatar" default="0" label="USE_GRAVATAR" description="USE_GRAVATAR_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="usergroup" default="0" label="GROUP" description="GROUP_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="timeonline" default="0" label="TIME_ONLINE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="authmethod" default="0" label="AUTH_METHOD" description="AUTH_METHOD_USEDEXT">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

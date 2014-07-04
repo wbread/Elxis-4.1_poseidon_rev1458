@@ -1,0 +1,23 @@
+<package type="auth">
+	<name>openid</name>
+	<title>OpenID</title>
+	<created>2012-03-16 21:08:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Guests can login with their OpenID account (supports Google, Yahoo and any OpenId provider). 
+	The logged in users are considered as External Users.<br />
+	<strong>Important notice</strong><br />
+	OpenID authentication might not work for some providers (including Google) if Elxis Defender is enabled.
+	]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">user</package>
+	</dependencies>
+	<params />
+</package>

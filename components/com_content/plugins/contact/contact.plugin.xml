@@ -1,0 +1,96 @@
+<package type="plugin">
+	<name>contact</name>
+	<title>Contact form</title>
+	<created>2013-03-05 12:16:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.1</version>
+	<description><![CDATA[Displays a contact form inside Elxis articles. Name and e-mail fields are 
+	always shown and are required. You can set which other form elements you want to display. Important: 
+	The form will be shown only inside content articles and only on the article page!]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params group="STD_FORM_ELEMENTS" collapsed="0">
+		<param type="radio" name="phone" default="0" label="TELEPHONE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_phone" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="mobile" default="0" label="MOBILE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_mobile" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="address" default="0" label="ADDRESS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_address" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="city" default="0" label="CITY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_city" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="postalcode" default="0" label="POSTAL_CODE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_postalcode" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="country" default="0" label="COUNTRY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_country" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="website" default="0" label="WEBSITE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="req_website" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="CST_FORM_ELEMENTS" collapsed="1">
+		<param type="comment" name="comment_labels" default="" label="" description="">ENTER_LABELS_CST</param>
+		<param type="text" name="field1" default="" multilingual="1" dir="rtl" label="LABEL" description="" />
+		<param type="radio" name="req_field1" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="field2" default="" multilingual="1" dir="rtl" label="LABEL" description="" />
+		<param type="radio" name="req_field2" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="field3" default="" multilingual="1" dir="rtl" label="LABEL" description="" />
+		<param type="radio" name="req_field3" default="0" label="REQUIRED" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

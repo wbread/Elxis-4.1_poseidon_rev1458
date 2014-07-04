@@ -1,0 +1,333 @@
+/**
+Package: Elxis CMS
+Subpackage: Component cPanel
+Date: 2012-03-30
+Author: Ioannis Sannos / Elxis Team
+http://www.elxis.org
+*/
+
+.cpstats_wrap { margin:10px 0; padding:0 10px 0 0; background-color:#fff; border:1px solid #ccc; }
+/* month graph */
+.cpstatsgrid28, .cpstatsgrid29, .cpstatsgrid30, .cpstatsgrid31 { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_days31.png) 0 0 no-repeat; }
+.cpstatsgrid28 { background-image:url(grid_days28.png); }
+.cpstatsgrid29 { background-image:url(grid_days29.png); }
+.cpstatsgrid30 { background-image:url(grid_days30.png); }
+/* year graph */
+.cpstatsgrid12, .cpstatsgrid12_en { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months.png) 0 0 no-repeat; }
+.cpstatsgrid12_de { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months.png) 0 0 no-repeat; }
+.cpstatsgrid12_el { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months_el.png) 0 0 no-repeat; }
+.cpstatsgrid12_es { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months_es.png) 0 0 no-repeat; }
+.cpstatsgrid12_fr { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months_fr.png) 0 0 no-repeat; }
+.cpstatsgrid12_it { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months_it.png) 0 0 no-repeat; }
+.cpstatsgrid12_ru { position:relative; margin:0; padding:0; width:880px; height:350px; border:none; background:#fff url(grid_months_ru.png) 0 0 no-repeat; }
+/* y-axis */
+.cpstats_y0 { position:absolute; left:30px; top: 312px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.cpstats_y20 { position:absolute; left:30px; top: 252px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.cpstats_y40 { position:absolute; left:30px; top: 192px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.cpstats_y60 { position:absolute; left:30px; top: 132px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.cpstats_y80 { position:absolute; left:30px; top: 72px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+.cpstats_y100 { position:absolute; left:30px; top: 12px; font:normal 12px/15px tahoma, verdana, serif; color:#000; }
+/* x-axis */
+.cpstats_x, .cpstats_yx { margin:0; padding:0; border:none; list-style:none; position:absolute; left:0; bottom:30px; width:100%; }
+/* month: x-axis */
+.cpstats_x li {
+	position:absolute; bottom:0; left:0; margin:0; padding:0; border:none; list-style:none; float:left; width:25px !important; height:1px;
+	background-color:#99CCFF; font:normal 10px/13px tahoma, verdana, serif; color:#444; text-align:center; vertical-align:top; border:none; overflow:hidden;
+}
+/* year: x-axis */
+.cpstats_yx li {
+	position:absolute; bottom:0; left:0; margin:0; padding:0; border:none; list-style:none; float:left; width:65px !important; height:1px;
+	background-color:#99CCFF; font:normal 10px/13px tahoma, verdana, serif; color:#444; text-align:center; vertical-align:top; border:none; overflow:hidden;
+}
+/* month: x-axis */
+.cpstats_x li.cpstats_day1 { left: 100px; }
+.cpstats_x li.cpstats_day2 { left: 125px; }
+.cpstats_x li.cpstats_day3 { left: 150px; }
+.cpstats_x li.cpstats_day4 { left: 175px; }
+.cpstats_x li.cpstats_day5 { left: 200px; }
+.cpstats_x li.cpstats_day6 { left: 225px; }
+.cpstats_x li.cpstats_day7 { left: 250px; }
+.cpstats_x li.cpstats_day8 { left: 275px; }
+.cpstats_x li.cpstats_day9 { left: 300px; }
+.cpstats_x li.cpstats_day10 { left: 325px; }
+.cpstats_x li.cpstats_day11 { left: 350px; }
+.cpstats_x li.cpstats_day12 { left: 375px; }
+.cpstats_x li.cpstats_day13 { left: 400px; }
+.cpstats_x li.cpstats_day14 { left: 425px; }
+.cpstats_x li.cpstats_day15 { left: 450px; }
+.cpstats_x li.cpstats_day16 { left: 475px; }
+.cpstats_x li.cpstats_day17 { left: 500px; }
+.cpstats_x li.cpstats_day18 { left: 525px; }
+.cpstats_x li.cpstats_day19 { left: 550px; }
+.cpstats_x li.cpstats_day20 { left: 575px; }
+.cpstats_x li.cpstats_day21 { left: 600px; }
+.cpstats_x li.cpstats_day22 { left: 625px; }
+.cpstats_x li.cpstats_day23 { left: 650px; }
+.cpstats_x li.cpstats_day24 { left: 675px; }
+.cpstats_x li.cpstats_day25 { left: 700px; }
+.cpstats_x li.cpstats_day26 { left: 725px; }
+.cpstats_x li.cpstats_day27 { left: 750px; }
+.cpstats_x li.cpstats_day28 { left: 775px; }
+.cpstats_x li.cpstats_day29 { left: 800px; }
+.cpstats_x li.cpstats_day30 { left: 825px; }
+.cpstats_x li.cpstats_day31 { left: 850px; }
+
+.cpstats_x li.cpstats_altday1 { left: 100px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday2 { left: 125px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday3 { left: 150px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday4 { left: 175px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday5 { left: 200px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday6 { left: 225px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday7 { left: 250px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday8 { left: 275px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday9 { left: 300px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday10 { left: 325px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday11 { left: 350px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday12 { left: 375px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday13 { left: 400px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday14 { left: 425px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday15 { left: 450px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday16 { left: 475px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday17 { left: 500px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday18 { left: 525px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday19 { left: 550px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday20 { left: 575px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday21 { left: 600px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday22 { left: 625px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday23 { left: 650px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday24 { left: 675px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday25 { left: 700px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday26 { left: 725px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday27 { left: 750px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday28 { left: 775px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday29 { left: 800px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday30 { left: 825px; background-color: #b3d8fd; }
+.cpstats_x li.cpstats_altday31 { left: 850px; background-color: #b3d8fd; }
+
+/* year: x-axis */
+.cpstats_yx li.cpstats_month1 { left: 100px; }
+.cpstats_yx li.cpstats_month2 { left: 165px; }
+.cpstats_yx li.cpstats_month3 { left: 230px; }
+.cpstats_yx li.cpstats_month4 { left: 295px; }
+.cpstats_yx li.cpstats_month5 { left: 360px; }
+.cpstats_yx li.cpstats_month6 { left: 425px; }
+.cpstats_yx li.cpstats_month7 { left: 490px; }
+.cpstats_yx li.cpstats_month8 { left: 555px; }
+.cpstats_yx li.cpstats_month9 { left: 620px; }
+.cpstats_yx li.cpstats_month10 { left: 685px; }
+.cpstats_yx li.cpstats_month11 { left: 750px; }
+.cpstats_yx li.cpstats_month12 { left: 815px; }
+
+.cpstats_yx li.cpstats_altmonth1 { left: 100px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth2 { left: 165px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth3 { left: 230px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth4 { left: 295px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth5 { left: 360px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth6 { left: 425px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth7 { left: 490px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth8 { left: 555px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth9 { left: 620px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth10 { left: 685px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth11 { left: 750px; background-color: #b3d8fd; }
+.cpstats_yx li.cpstats_altmonth12 { left: 815px; background-color: #b3d8fd; }
+
+/* month and year x bars */
+.cpstats_x li.cpstats_pc0, .cpstats_yx li.cpstats_pc0 { height:1px; }
+.cpstats_x li.cpstats_pc1, .cpstats_yx li.cpstats_pc1 { height:3px; }
+.cpstats_x li.cpstats_pc2, .cpstats_yx li.cpstats_pc2 { height:6px; }
+.cpstats_x li.cpstats_pc3, .cpstats_yx li.cpstats_pc3 { height:9px; }
+.cpstats_x li.cpstats_pc4, .cpstats_yx li.cpstats_pc4 { height:12px; }
+.cpstats_x li.cpstats_pc5, .cpstats_yx li.cpstats_pc5 { height:15px; }
+.cpstats_x li.cpstats_pc6, .cpstats_yx li.cpstats_pc6 { height:18px; }
+.cpstats_x li.cpstats_pc7, .cpstats_yx li.cpstats_pc7 { height:21px; }
+.cpstats_x li.cpstats_pc8, .cpstats_yx li.cpstats_pc8 { height:24px; }
+.cpstats_x li.cpstats_pc9, .cpstats_yx li.cpstats_pc9 { height:27px; }
+.cpstats_x li.cpstats_pc10, .cpstats_yx li.cpstats_pc10 { height:30px; }
+.cpstats_x li.cpstats_pc11, .cpstats_yx li.cpstats_pc11 { height:33px; }
+.cpstats_x li.cpstats_pc12, .cpstats_yx li.cpstats_pc12 { height:36px; }
+.cpstats_x li.cpstats_pc13, .cpstats_yx li.cpstats_pc13 { height:39px; }
+.cpstats_x li.cpstats_pc14, .cpstats_yx li.cpstats_pc14 { height:42px; }
+.cpstats_x li.cpstats_pc15, .cpstats_yx li.cpstats_pc15 { height:45px; }
+.cpstats_x li.cpstats_pc16, .cpstats_yx li.cpstats_pc16 { height:48px; }
+.cpstats_x li.cpstats_pc17, .cpstats_yx li.cpstats_pc17 { height:51px; }
+.cpstats_x li.cpstats_pc18, .cpstats_yx li.cpstats_pc18 { height:54px; }
+.cpstats_x li.cpstats_pc19, .cpstats_yx li.cpstats_pc19 { height:57px; }
+.cpstats_x li.cpstats_pc20, .cpstats_yx li.cpstats_pc20 { height:60px; }
+.cpstats_x li.cpstats_pc21, .cpstats_yx li.cpstats_pc21 { height:63px; }
+.cpstats_x li.cpstats_pc22, .cpstats_yx li.cpstats_pc22 { height:66px; }
+.cpstats_x li.cpstats_pc23, .cpstats_yx li.cpstats_pc23 { height:69px; }
+.cpstats_x li.cpstats_pc24, .cpstats_yx li.cpstats_pc24 { height:72px; }
+.cpstats_x li.cpstats_pc25, .cpstats_yx li.cpstats_pc25 { height:75px; }
+.cpstats_x li.cpstats_pc26, .cpstats_yx li.cpstats_pc26 { height:78px; }
+.cpstats_x li.cpstats_pc27, .cpstats_yx li.cpstats_pc27 { height:81px; }
+.cpstats_x li.cpstats_pc28, .cpstats_yx li.cpstats_pc28 { height:84px; }
+.cpstats_x li.cpstats_pc29, .cpstats_yx li.cpstats_pc29 { height:87px; }
+.cpstats_x li.cpstats_pc30, .cpstats_yx li.cpstats_pc30 { height:90px; }
+.cpstats_x li.cpstats_pc31, .cpstats_yx li.cpstats_pc31 { height:93px; }
+.cpstats_x li.cpstats_pc32, .cpstats_yx li.cpstats_pc32 { height:96px; }
+.cpstats_x li.cpstats_pc33, .cpstats_yx li.cpstats_pc33 { height:99px; }
+.cpstats_x li.cpstats_pc34, .cpstats_yx li.cpstats_pc34 { height:102px; }
+.cpstats_x li.cpstats_pc35, .cpstats_yx li.cpstats_pc35 { height:105px; }
+.cpstats_x li.cpstats_pc36, .cpstats_yx li.cpstats_pc36 { height:108px; }
+.cpstats_x li.cpstats_pc37, .cpstats_yx li.cpstats_pc37 { height:111px; }
+.cpstats_x li.cpstats_pc38, .cpstats_yx li.cpstats_pc38 { height:114px; }
+.cpstats_x li.cpstats_pc39, .cpstats_yx li.cpstats_pc39 { height:117px; }
+.cpstats_x li.cpstats_pc40, .cpstats_yx li.cpstats_pc40 { height:120px; }
+.cpstats_x li.cpstats_pc41, .cpstats_yx li.cpstats_pc41 { height:123px; }
+.cpstats_x li.cpstats_pc42, .cpstats_yx li.cpstats_pc42 { height:126px; }
+.cpstats_x li.cpstats_pc43, .cpstats_yx li.cpstats_pc43 { height:129px; }
+.cpstats_x li.cpstats_pc44, .cpstats_yx li.cpstats_pc44 { height:132px; }
+.cpstats_x li.cpstats_pc45, .cpstats_yx li.cpstats_pc45 { height:135px; }
+.cpstats_x li.cpstats_pc46, .cpstats_yx li.cpstats_pc46 { height:138px; }
+.cpstats_x li.cpstats_pc47, .cpstats_yx li.cpstats_pc47 { height:141px; }
+.cpstats_x li.cpstats_pc48, .cpstats_yx li.cpstats_pc48 { height:144px; }
+.cpstats_x li.cpstats_pc49, .cpstats_yx li.cpstats_pc49 { height:147px; }
+.cpstats_x li.cpstats_pc50, .cpstats_yx li.cpstats_pc50 { height:150px; }
+.cpstats_x li.cpstats_pc51, .cpstats_yx li.cpstats_pc51 { height:153px; }
+.cpstats_x li.cpstats_pc52, .cpstats_yx li.cpstats_pc52 { height:156px; }
+.cpstats_x li.cpstats_pc53, .cpstats_yx li.cpstats_pc53 { height:159px; }
+.cpstats_x li.cpstats_pc54, .cpstats_yx li.cpstats_pc54 { height:162px; }
+.cpstats_x li.cpstats_pc55, .cpstats_yx li.cpstats_pc55 { height:165px; }
+.cpstats_x li.cpstats_pc56, .cpstats_yx li.cpstats_pc56 { height:168px; }
+.cpstats_x li.cpstats_pc57, .cpstats_yx li.cpstats_pc57 { height:171px; }
+.cpstats_x li.cpstats_pc58, .cpstats_yx li.cpstats_pc58 { height:174px; }
+.cpstats_x li.cpstats_pc59, .cpstats_yx li.cpstats_pc59 { height:177px; }
+.cpstats_x li.cpstats_pc60, .cpstats_yx li.cpstats_pc60 { height:180px; }
+.cpstats_x li.cpstats_pc61, .cpstats_yx li.cpstats_pc61 { height:183px; }
+.cpstats_x li.cpstats_pc62, .cpstats_yx li.cpstats_pc62 { height:186px; }
+.cpstats_x li.cpstats_pc63, .cpstats_yx li.cpstats_pc63 { height:189px; }
+.cpstats_x li.cpstats_pc64, .cpstats_yx li.cpstats_pc64 { height:192px; }
+.cpstats_x li.cpstats_pc65, .cpstats_yx li.cpstats_pc65 { height:195px; }
+.cpstats_x li.cpstats_pc66, .cpstats_yx li.cpstats_pc66 { height:198px; }
+.cpstats_x li.cpstats_pc67, .cpstats_yx li.cpstats_pc67 { height:201px; }
+.cpstats_x li.cpstats_pc68, .cpstats_yx li.cpstats_pc68 { height:204px; }
+.cpstats_x li.cpstats_pc69, .cpstats_yx li.cpstats_pc69 { height:207px; }
+.cpstats_x li.cpstats_pc70, .cpstats_yx li.cpstats_pc70 { height:210px; }
+.cpstats_x li.cpstats_pc71, .cpstats_yx li.cpstats_pc71 { height:213px; }
+.cpstats_x li.cpstats_pc72, .cpstats_yx li.cpstats_pc72 { height:216px; }
+.cpstats_x li.cpstats_pc73, .cpstats_yx li.cpstats_pc73 { height:219px; }
+.cpstats_x li.cpstats_pc74, .cpstats_yx li.cpstats_pc74 { height:222px; }
+.cpstats_x li.cpstats_pc75, .cpstats_yx li.cpstats_pc75 { height:225px; }
+.cpstats_x li.cpstats_pc76, .cpstats_yx li.cpstats_pc76 { height:228px; }
+.cpstats_x li.cpstats_pc77, .cpstats_yx li.cpstats_pc77 { height:231px; }
+.cpstats_x li.cpstats_pc78, .cpstats_yx li.cpstats_pc78 { height:234px; }
+.cpstats_x li.cpstats_pc79, .cpstats_yx li.cpstats_pc79 { height:237px; }
+.cpstats_x li.cpstats_pc80, .cpstats_yx li.cpstats_pc80 { height:240px; }
+.cpstats_x li.cpstats_pc81, .cpstats_yx li.cpstats_pc81 { height:243px; }
+.cpstats_x li.cpstats_pc82, .cpstats_yx li.cpstats_pc82 { height:246px; }
+.cpstats_x li.cpstats_pc83, .cpstats_yx li.cpstats_pc83 { height:249px; }
+.cpstats_x li.cpstats_pc84, .cpstats_yx li.cpstats_pc84 { height:252px; }
+.cpstats_x li.cpstats_pc85, .cpstats_yx li.cpstats_pc85 { height:255px; }
+.cpstats_x li.cpstats_pc86, .cpstats_yx li.cpstats_pc86 { height:258px; }
+.cpstats_x li.cpstats_pc87, .cpstats_yx li.cpstats_pc87 { height:261px; }
+.cpstats_x li.cpstats_pc88, .cpstats_yx li.cpstats_pc88 { height:264px; }
+.cpstats_x li.cpstats_pc89, .cpstats_yx li.cpstats_pc89 { height:267px; }
+.cpstats_x li.cpstats_pc90, .cpstats_yx li.cpstats_pc90 { height:270px; }
+.cpstats_x li.cpstats_pc91, .cpstats_yx li.cpstats_pc91 { height:273px; }
+.cpstats_x li.cpstats_pc92, .cpstats_yx li.cpstats_pc92 { height:276px; }
+.cpstats_x li.cpstats_pc93, .cpstats_yx li.cpstats_pc93 { height:279px; }
+.cpstats_x li.cpstats_pc94, .cpstats_yx li.cpstats_pc94 { height:282px; }
+.cpstats_x li.cpstats_pc95, .cpstats_yx li.cpstats_pc95 { height:285px; }
+.cpstats_x li.cpstats_pc96, .cpstats_yx li.cpstats_pc96 { height:288px; }
+.cpstats_x li.cpstats_pc97, .cpstats_yx li.cpstats_pc97 { height:291px; }
+.cpstats_x li.cpstats_pc98, .cpstats_yx li.cpstats_pc98 { height:294px; }
+.cpstats_x li.cpstats_pc99, .cpstats_yx li.cpstats_pc99 { height:297px; }
+.cpstats_x li.cpstats_pc100, .cpstats_yx li.cpstats_pc100 { height:300px; }
+
+.cpstats_x li:hover, .cpstats_yx li:hover { background-color:#3366FF; color:#fff; }
+
+/* pie */
+.cpstats_piewrap { margin:0; padding:0; border:none; width:300px; height:300px; float:left; position:relative; }
+.cpstats_appendix { margin:0; padding:0 0 0 60px; float:left; width:auto; }
+.cpstats_piebg {
+	background-color:#ccc; position:absolute; top:0; left:0; width:300px; height:300px; border:0px solid #ccc;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-o-border-radius: 150px;
+	border-radius: 150px;
+	-moz-box-shadow: -1px 3px 6px #555;
+	-webkit-box-shadow: -1px 3px 6px #555;
+	-o-box-shadow: -1px 3px 6px #555;
+	box-shadow: -1px 3px 6px #555;
+}
+.cpstats_hold {
+	position: absolute; left:0; top:0; width:300px; height:300px;
+	-moz-border-radius:150px;
+	-webkit-border-radius:150px;
+	-o-border-radius:150px;
+	border-radius:150px;
+	clip:rect(0px, 300px, 300px, 150px);
+}
+.cpstats_pie {
+	position:absolute; width:300px; height:300px;
+	-moz-border-radius:150px;
+	-webkit-border-radius:150px;
+	-o-border-radius:150px;
+	border-radius:150px;
+	clip:rect(0px, 150px, 300px, 0px);
+}
+.cpstats_hold.cpstats_gt50 {
+	clip:rect(auto, auto, auto, auto);
+}
+.cpstats_pie.cpstats_fill {
+	-ms-transform:rotate(180deg) !important;
+	-moz-transform:rotate(180deg) !important;
+	-webkit-transform:rotate(180deg) !important;
+	-o-transform:rotate(180deg) !important;
+	transform:rotate(180deg) !important;
+}
+
+#cpstats_pie_blue .cpstats_pie { background-color: #52AFFD; border-color:#52AFFD; }
+#cpstats_pie_navy .cpstats_pie { background-color: #0C76D0; border-color:#0C76D0; }
+#cpstats_pie_yellow .cpstats_pie { background-color: #F6F282; border-color:#F6F282; }
+#cpstats_pie_gold .cpstats_pie { background-color: #DAD309; border-color:#DAD309; }
+#cpstats_pie_orange .cpstats_pie { background-color: #FF6600; border-color:#FF6600; }
+#cpstats_pie_bluelight .cpstats_pie { background-color: #87C2F5; border-color:#87C2F5; }
+#cpstats_pie_olive .cpstats_pie { background-color: #466B12; border-color:#466B12; }
+#cpstats_pie_greenlight .cpstats_pie { background-color: #94E028; border-color:#94E028; }
+#cpstats_pie_fuchsia .cpstats_pie { background-color: #FF00FF; border-color:#FF00FF; }
+#cpstats_pie_red .cpstats_pie { background-color: #FF0000; border-color:#FF0000; }
+#cpstats_pie_bluegray .cpstats_pie { background-color: #A7BDCF; border-color:#A7BDCF; }
+#cpstats_pie_teal .cpstats_pie { background-color: #008080; border-color:#008080;}
+#cpstats_pie_green .cpstats_pie { background-color: #69A416; border-color:#69A416; }
+#cpstats_pie_pink .cpstats_pie { background-color: #EF84F8; border-color:#EF84F8; }
+#cpstats_pie_purple .cpstats_pie { background-color: #7E5FCE; border-color:#7E5FCE; }
+
+/* appendix */
+.cpstats_tbl { margin:0; padding:0; border:none; background-color:#fff; border-collapse:collapse; }
+.cpstats_tbl th, .cpstats_tbl td {
+	margin:0; padding:2px 5px; border:1px solid #bbb; background-color:#fff; border-collapse:collapse;
+	font:normal 12px/16px tahoma, verdana, serif; color:#333;
+}
+.cpstats_tbl th { font-weight: bold; background-color:#ddd; }
+
+/* navigation */
+.cpstats_navwrap {
+	margin:0 0 30px 0; padding:2px; background-color:#fff; border:1px solid #dadada;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
+	border-radius:6px;
+}
+.cpstats_nav {
+	margin:0; padding:8px; background-color:#eee; border:0px solid #eee;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+}
+a.cpstats_nava, a.cpstats_nava:visited, a.cpstats_nava:active, a.cpstats_nava:link, a.cpstats_nava:hover {
+	outline:none; margin:0 5px; padding:0; text-decoration:none; font:normal 14px/18px tahoma, verdana, serif; color:#666; border:none;
+}
+a.cpstats_nava:hover { color:#3366FF; }
+a.cpstats_navasl, a.cpstats_navasl:visited, a.cpstats_navasl:active, a.cpstats_navasl:link, a.cpstats_navasl:hover {
+	outline:none; margin:0 5px; padding:0; text-decoration:none; font:bold 14px/18px tahoma, verdana, serif; color:#666; border:none;
+}
+a.cpstats_navasl:hover { color:#000; }
+
+/* download backup */
+a.cpdownload, a.cpdownload:visited, a.cpdownload:active, a.cpdownload:link, a.cpdownload:hover {
+	outline:none; margin:0; padding:0 0 0 18px; text-decoration:none; font:normal 12px/16px tahoma, verdana, sans-serif; color:#16477E; border:none;
+	background:transparent url(download.png) 0 0 no-repeat;
+}
+a.cpdownload:hover { color:#000; }

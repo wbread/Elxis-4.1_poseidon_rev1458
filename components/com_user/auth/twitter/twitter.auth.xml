@@ -1,0 +1,27 @@
+<package type="auth">
+	<name>twitter</name>
+	<title>Twitter</title>
+	<created>2012-03-11 09:05:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Guests can login with their Twitter account. The logged in Twitter users are considered here as as External Users.<br /><br />
+	<strong>How to setup Twitter OAuth</strong><br />
+	Go to <a href="http://twitter.com/oauth_clients/" target="_blank">twitter.com/oauth_clients/</a> to register your Twitter OAuth app.<br />
+	As callback URL use: <span style="color:#008000; font-style:italic;">http://www.example.com/inner.php/user/login/twitter.html?etask=auth</span><br />
+	Set here the <span style="color:#993300;">Consumer key</span> and <span style="color:#993300;">Consumer secret</span> options you got from Twitter.
+	]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">user</package>
+	</dependencies>
+	<params>
+		<param type="text" name="consumer_key" default="" label="Consumer key" description="" />
+		<param type="text" name="consumer_secret" default="" label="Consumer secret" description="" />
+	</params>
+</package>

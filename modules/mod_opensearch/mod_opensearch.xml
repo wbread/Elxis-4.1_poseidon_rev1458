@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_opensearch</name>
+	<title>OpenSearch</title>
+	<created>2012-03-04 13:32:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.0</version>
+	<description><![CDATA[Displays a link to add your Elxis powered site into your browser search providers list. 
+	Visitors will be able to search the site directly from their browser search box!]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">search</package>
+	</dependencies>
+	<params>
+		<param type="list" name="cache" default="2" dir="rtl" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="1">YES_FOR_VISITORS</option>
+			<option value="2">YES_FOR_ALL</option>
+		</param>
+		<param type="list" name="cachetime" default="172800" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+		<param type="list" name="style" default="0" dir="ltr" label="STYLE" description="">
+            <option value="0" hide="1001">IMAGE_TEXT</option>
+            <option value="1" hide="1001">IMAGE</option>
+            <option value="2" hide="1001">TEXT</option>
+            <option value="3" show="1001">CUSTOM_IMAGE</option>
+		</param>
+	</params>
+	<params groupid="1001" collapsed="1">
+		<param type="file" name="custom_image" path="modules/mod_opensearch/{multisite/}" filetype="png,jpg,jpeg,gif" maxsize="0" resizewidth="0" resizeheight="0" default="" label="CUSTOM_IMAGE" description="CUSTOM_IMAGE_DESC" />
+	</params>
+</package>

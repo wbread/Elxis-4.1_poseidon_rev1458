@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="backend">
+	<name>mod_adminarticles</name>
+	<title>Latest and Popular articles</title>
+	<created>2012-03-28 18:49:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[This administration module displays a list of <strong>latest</strong> and <strong>popular</strong> articles added on site.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.x">elxis</dependency>
+		<dependency type="component" version="1.x">content</dependency>
+	</dependencies>
+	<params>
+		<param type="range" name="limit" first="1" last="20" step="1" default="3" label="LIMIT" description="LIMIT_ARTICLES_DESC" />
+		<param type="list" name="popmonths" default="0" label="POP_MONTHS" dir="rtl" description="POP_MONTHS_DESC">
+			<option value="0">ALL_TIME_POPULAR</option>
+			<option value="1">LAST_MONTH</option>
+			<option value="2">LAST_2MONTHS</option>
+			<option value="3">LAST_3MONTHS</option>
+			<option value="6">LAST_6MONTHS</option>
+			<option value="12">LAST_YEAR</option>
+		</param>
+		<param type="radio" name="cache" default="0" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="2">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+	</params>
+</package>

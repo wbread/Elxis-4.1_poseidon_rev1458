@@ -1,0 +1,34 @@
+<elxismenu component="user">
+	<frontend>
+		<menu name="default">
+			<title lang="en">Users</title>
+			<title lang="el">Μέλη</title>
+			<items>
+                <item type="link" link="user:login/" file="" popup="0" gid="7" secure="1" target="_self">
+                	<title lang="en">Login</title>
+                	<title lang="el">Σύνδεση</title>
+                </item>
+                <item type="link" link="user:register.html" file="" popup="0" gid="7" secure="1" target="_self">
+                	<title lang="en">Register</title>
+                	<title lang="el">Εγγραφή</title>
+                </item>
+				<item type="link" link="user:recover-pwd.html" file="" popup="0" gid="7" secure="1" target="_self">
+					<title lang="en">Recover password</title>
+					<title lang="el">Ανάκτηση κωδικού</title>
+				</item>
+                <item type="link" link="user:logout.html" file="" popup="0" minlevel="1" secure="1" target="_self">
+                	<title lang="en">Logout</title>
+                	<title lang="el">Αποσύνδεση</title>
+				</item>
+				<item type="link" link="user:members/" file="" popup="0" minlevel="2" secure="0" target="_self">
+					<title lang="en">Members list</title>
+					<title lang="el">Λίστα μελών</title>
+				</item>
+                <item type="link" link="user:members/myprofile.html" file="" popup="0" minlevel="2" secure="1" target="_self">
+                	<title lang="en">My profile</title>
+                	<title lang="el">Το προφίλ μου</title>
+                </item>
+			</items>
+		</menu>
+	</frontend>
+</elxismenu>

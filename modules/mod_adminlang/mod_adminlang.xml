@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="backend">
+	<name>mod_adminlang</name>
+	<title>Administration language</title>
+	<created>2012-01-29 17:53:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Displays a language selection box in administration area.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.x">elxis</dependency>
+	</dependencies>
+	<params>
+		<param type="radio" name="localnames" default="1" label="LOCAL_NAMES" description="LOCAL_NAMES_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>		
+		</param>
+	</params>
+</package>

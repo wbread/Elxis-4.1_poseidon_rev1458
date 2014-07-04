@@ -1,0 +1,61 @@
+/**
+Elxis CMS
+Module Language (Purple CSS)
+Author: Ioannis Sannos
+http://www.elxis.org
+*/
+
+div.modlang_box { margin:0; padding:0; position:relative; height:26px; }
+div.modlang_wrappper {
+	margin:0; padding:0; width:150px; display:inline-block; background:transparent; text-align:left; overflow:hidden; position:absolute; top:0; right:0;
+}
+div.modlang_wrappper img { height:16px; width:16px; margin:0 3px 0 0; padding:0; border:0; vertical-align:middle; float:left; }
+a.modlang_active, a.modlang_active:hover, a.modlang_active:visited, a.modlang_active:active, a.modlang_active:link {
+	margin:0; padding:4px 10px; display:block; border:1px solid #3b4253;
+	font:bold 12px/16px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;
+	background:#616d89 url(bg_purple.png) 100% 50% no-repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+a.modlang_active:hover {
+	background:#8693b4 url(bg_purple_on.png) 100% 50% no-repeat; border-color:#4c5b7e; color:#fff;
+}
+.modlang_wrappper ul, .modlang_wrappper ul li { margin:0; padding:0; list-style:none; border:0; }
+.modlang_wrappper ul { padding:3px; border:1px solid #3b4253; background-color:#616d89; display:none; }
+.modlang_wrappper:hover ul { display:block; }
+.modlang_wrappper ul li a, .modlang_wrappper ul li a:hover, .modlang_wrappper ul li a:visited, .modlang_wrappper ul li a:active, .modlang_wrappper ul li a:link {
+	margin:0; padding:4px 5px; border:1px solid #5b657b; background-color:#5b657b;
+	font:bold 12px/16px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;
+	display:block; overflow:hidden;
+}
+.modlang_wrappper ul li a:hover {
+	border:1px solid #a4b0cb; color:#fff; background:#8693b4 url(bg_purple_on.png) 0 50% no-repeat;
+}
+/********* RTL VERSION *********/
+div.modlang_wrappper-rtl {
+	margin:0; padding:0; width:150px; display:inline-block; background:transparent; text-align:right; overflow:hidden; position:absolute; top:0; left:0;
+}
+div.modlang_wrappper-rtl img { height:16px; width:16px; margin:0 0 0 3px; padding:0; border:0; vertical-align:middle; float:right; }
+a.modlang_active-rtl, a.modlang_active-rtl:hover, a.modlang_active-rtl:visited, a.modlang_active-rtl:active, a.modlang_active-rtl:link {
+	margin:0; padding:4px 10px; display:block; border:1px solid #3b4253;
+	font:bold 12px/16px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;
+	background:#616d89 url(bg_purple-rtl.png) 0 50% no-repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+a.modlang_active-rtl:hover {
+	background:#8693b4 url(bg_purple_on-rtl.png) 0 50% no-repeat; border-color:#4c5b7e; color:#fff;
+}
+.modlang_wrappper-rtl ul, .modlang_wrappper-rtl ul li { margin:0; padding:0; list-style:none; border:0; }
+.modlang_wrappper-rtl ul { padding:3px; border:1px solid #3b4253; background-color:#616d89; display:none; }
+.modlang_wrappper-rtl:hover ul { display:block; }
+.modlang_wrappper-rtl ul li a, .modlang_wrappper-rtl ul li a:hover, .modlang_wrappper-rtl ul li a:visited, .modlang_wrappper-rtl ul li a:active, .modlang_wrappper-rtl ul li a:link {
+	margin:0; padding:4px 5px; border:1px solid #5b657b; background-color:#5b657b;
+	font:bold 12px/16px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;
+	display:block; overflow:hidden;
+}
+.modlang_wrappper-rtl ul li a:hover {
+	border:1px solid #a4b0cb; color:#fff; background:#8693b4 url(bg_purple_on-rtl.png) 100% 50% no-repeat;
+}

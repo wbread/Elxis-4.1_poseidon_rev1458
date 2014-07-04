@@ -1,0 +1,19 @@
+<package type="plugin">
+	<name>youtube</name>
+	<title>YouTube Video</title>
+	<created>2012-05-02 13:59:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Displays a Youtube Video by Video ID]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params />
+</package>

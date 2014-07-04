@@ -1,0 +1,21 @@
+/**
+Elxis CMS
+Module Administration search (RTL CSS)
+Author: Ioannis Sannos
+*/
+
+.asearch_fm { margin:0 5px; padding:0; border:0; width:140px; float:left; background:transparent; }
+.asearch_fm fieldset {
+	margin:0; padding:0 0 0 0; border:0; position:relative; display:block; background:transparent;
+}
+.asearch_input, .asearch_input_dis {
+	margin:0; padding:2px 10px 2px 24px; border:0; vertical-align: baseline;
+	font:12px/16px tahoma, verdana, serif; color:#999; height:18px; width:104px; text-align:right;
+	background:#f8f8f8 url(search.png) no-repeat 4px 3px; border:1px solid #bbb; border-radius:8px;
+}
+.asearch_input:hover, .asearch_input:focus {
+	border:1px solid #66b5dd; outline:none;  background:#fff url(searchon.png) no-repeat 4px 3px; color:#555;
+}
+.asearch_input_dis:hover, .asearch_input_dis:focus {
+	border:1px solid #bbb; outline:none; background-color:#f8f8f8; color:#999;
+}

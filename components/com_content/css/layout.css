@@ -1,0 +1,61 @@
+
+.fpwrap { margin: 10px 0; padding:0; border:0; width:990px; background-color: #fff; }
+.fpboxeswrap { margin:0 10px 0 0; padding:0; border:none; width:160px; float:left; background:none; }
+.fpboxes {
+	list-style:none; text-indent:0; direction:ltr;
+	margin:0; padding:0 4px; border:1px dashed #ccc; background-color:#eee; min-height: 300px;
+}
+.fplayout { margin:0; padding:2px; border:1px dashed #ccc; width:800px; float:left; background-color:#ffffff; display: block; }
+
+#fpleftcol { margin:0; padding:0; border:0; width:160px; float:left;  }
+#fpmidcol { margin:0; padding:0; border:0; width:480px; float:left; }
+#fprightcol { margin:0; padding:0; border:0; width:160px; float:left; }
+
+.lay100 { list-style-type:none; margin:2px; padding: 14px 2px 2px 2px; border:1px dashed #ccc; background-color:#eee; min-height:40px; display:block; direction:ltr; }
+.lay160 { list-style-type:none; margin:2px; padding: 14px 2px 2px 2px; border:1px dashed #ccc; width:150px; float:left; background-color:#eee; min-height:40px; display:block; direction:ltr; }
+.lay240 { list-style-type:none; margin:2px; padding: 14px 2px 2px 2px; border:1px dashed #ccc; width:230px; float:left; background-color:#eee; min-height: 40px; display:block; direction:ltr; }
+.lay320 { list-style-type:none; margin:2px; padding: 14px 2px 2px 2px; border:1px dashed #ccc; width:310px; float:left; background-color:#eee; min-height:40px; display:block; direction:ltr; }
+.lay480 { list-style-type:none; margin:2px; padding: 14px 2px 2px 2px; border:1px dashed #ccc; width:470px; float:left; background-color:#eee; min-height: 40px; display:block; direction:ltr; }
+
+#lay1 { background: #eee url(1.png) 50% 0 no-repeat; }
+#lay2 { background: #eee url(2.png) 50% 0 no-repeat; }
+#lay3 { background: #eee url(3.png) 50% 0 no-repeat; }
+#lay4 { background: #eee url(4.png) 50% 0 no-repeat; }
+#lay5 { background: #eee url(5.png) 50% 0 no-repeat; }
+#lay6 { background: #eee url(6.png) 50% 0 no-repeat; }
+#lay7 { background: #eee url(7.png) 50% 0 no-repeat; }
+#lay8 { background: #eee url(8.png) 50% 0 no-repeat; }
+#lay9 { background: #eee url(9.png) 50% 0 no-repeat; }
+#lay10 { background: #eee url(10.png) 50% 0 no-repeat; }
+#lay11 { background: #eee url(11.png) 50% 0 no-repeat; }
+#lay12 { background: #eee url(12.png) 50% 0 no-repeat; }
+#lay13 { background: #eee url(13.png) 50% 0 no-repeat; }
+#lay14 { background: #eee url(14.png) 50% 0 no-repeat; }
+#lay15 { background: #eee url(15.png) 50% 0 no-repeat; }
+#lay16 { background: #eee url(16.png) 50% 0 no-repeat; }
+#lay17 { background: #eee url(17.png) 50% 0 no-repeat; }
+
+.laybox {
+	list-style:none; text-indent:0;
+	min-height:32px;
+	margin:4px 2px !important; 
+	padding: 2px 2px 2px 34px !important;
+	border:1px dashed #99CC00 !important; 
+	z-index:2;
+	background: #EBFECB url(module.png) 1px 0 no-repeat !important;
+	vertical-align:middle;
+	color: #1B4A1F;
+	font: normal 12px/24px tahoma, verdana, serif; 
+	direction:ltr;
+}
+
+span.fpwlabel {
+	font: normal 12px/16px tahoma,verdana, serif;
+	width: 70px;
+	color:#333;
+	display: inline-block;
+}
+
+.fpmessage { margin: 5px 0; padding:0; border:0; font: normal 12px/16px tahoma, verdana, serif; color: #333; }
+.fpmessage-suc { margin: 5px 0; padding:0; border:0; font: normal 12px/16px tahoma, verdana, serif; color: #176F23; }
+.fpmessage-err { margin: 5px 0; padding:0; border:0; font: normal 12px/16px tahoma, verdana, serif; color: #cc0000; }

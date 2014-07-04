@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_language</name>
+	<title>Language</title>
+	<created>2013-03-07 17:20:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.1</version>
+	<description><![CDATA[Displays the current selected language and option to change it.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+	</params>
+	<params group="STYLE_LAYOUT" collapsed="0">
+		<param type="list" name="style" default="0" dir="rtl" label="STYLE" description="">
+			<option value="0">DROP_LIST</option>
+			<option value="1">FLAGS</option>
+			<option value="2">FLAGS_LANGS</option>
+			<option value="3">LANG_NAMES</option>
+			<option value="4">LINK_UCENTRAL</option>
+		</param>
+		<param type="list" name="langnames" default="0" dir="rtl" label="LANG_NAMES" description="LANG_NAMES_DESC">
+			<option value="0">NATIVE_NAME</option>
+			<option value="1">LATIN_NAME</option>
+			<option value="2">LANG_IDENTIFIER</option>
+			<option value="3">LANG_REGION</option>
+		</param>
+		<param type="list" name="colour" default="0" dir="rtl" label="DROP_COLOUR" description="DROP_COLOUR_DESC">
+			<option value="0">GRAY</option>
+			<option value="1">BLACK</option>
+			<option value="2">BLUE</option>
+			<option value="3">PURPLE</option>
+		</param>
+	</params>
+</package>

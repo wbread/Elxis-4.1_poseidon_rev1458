@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="backend">
+	<name>mod_adminprofile</name>
+	<title>Administration profile</title>
+	<created>2012-01-28 18:29:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Displays a quick profile / logout box in administration area.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.x">elxis</dependency>
+		<dependency type="component" version="1.x">cpanel</dependency>
+		<dependency type="component" version="1.x">content</dependency>
+	</dependencies>
+	<params>
+		<param type="list" name="show_articles" default="3" label="SHOW_ARTICLES" description="SHOW_ARTICLES_DESC">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</param>
+        <param type="radio" name="show_date" default="0" label="SHOW_DATE" description="SHOW_DATE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

@@ -1,0 +1,42 @@
+<package type="auth">
+	<name>ldap</name>
+	<title>LDAP</title>
+	<created>2012-03-06 19:03:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Allows the login to an Elxis site by authenticating against an LDAP server. The logged in users are considered as External Users.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">user</package>
+	</dependencies>
+	<params>
+		<param type="text" name="host" default="" label="Host" description="LDAP server hostname" />
+		<param type="text" name="port" default="389" label="Port" size="10" description="LDAP server port (usually 389 or 636)" />
+		<param type="list" name="ldap_version" default="3" label="LDAP version" dir="ltr" description="">
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</param>
+		<param type="radio" name="tls" default="0" label="TLS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="referrals" default="0" label="Follow referrals" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="base_dn" default="" label="Base DN" size="40" description="If empty, Elxis will try to search for it or even calculate it from the host name. Usually it is something like dc=mydomain,dc=com" />
+		<param type="text" name="user_dn" default="" label="User DN" size="40" description="If empty elxis will try to calculate it by using ldap_username search option (see bellow) or uid=username. You can use the {username} keyword that will be replaced in the user_dn by the provided username during login. Example: uid={username},ou=People,dc=mydomain,dc=com" />
+		<param type="text" name="ldap_filter" default="" label="LDAP filter" size="40" description="The search string to be used to retrieve user info. If empty Elxis will try to calculate it ldap_username if not empty, or other way. Example: (|(cn={username}*)(uid={username}))" />
+		<param type="text" name="ldap_firstname" default="" label="First name" size="40" description="From where to retrieve the user first name. If empty then elxis will try to get it from the ldap_fullname option, else it will use the username as firstname. Example: firstname" />
+		<param type="text" name="ldap_lastname" default="" label="Last name" size="40" description="From where to retrieve the user last name. If empty then elxis will try to get it from the ldap_fullname option, else it will be empty. Example: sn" />
+		<param type="text" name="ldap_fullname" default="" label="Full name" size="40" description="From where to retrieve the user full name. Required only if you havent provided the ldap_firstname and ldap_lastname options above. Example: cn" />
+		<param type="text" name="ldap_email" default="" label="E-mail" size="40" description="From where to retrieve the user email address. You can use the {username} keyword if the user username is similar or equal to his email address. Examples: mail, email, {username}@mydomain.com, {username}" />
+		<param type="text" name="ldap_username" default="" label="Username" size="40" description="From where to retrieve the user username. Required only to calculate the values of some of the above options in case you have left them empty. Also required to get the users username in case the login username in not equal to his real username (i.e in case he uses his email address to login). Example: uid" />
+	</params>
+</package>

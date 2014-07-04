@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="component">
+	<name>com_extmanager</name>
+	<title>Extensions manager</title>
+	<created>2012-08-05 12:21:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Install, uninstall, update, manage, synchronize and browse Elxis extensions.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params group="NOTIFICATIONS" groupid="1000" collapsed="0">
+		<param type="radio" name="notify_install" default="1" label="INSTALL" description="NOTIFY_INSTALL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="notify_uninstall" default="1" label="UNINSTALL" description="NOTIFY_UNINSTALL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="notify_update" default="1" label="UPDATE" description="NOTIFY_UPDATE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="LOG" groupid="1001" collapsed="0">
+		<param type="radio" name="log_install" default="1" label="INSTALL" description="LOG_INSTALL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="log_uninstall" default="1" label="UNINSTALL" description="LOG_UNINSTALL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="log_update" default="1" label="UPDATE" description="LOG_UPDATE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="ELXISDC" groupid="1002" collapsed="0">
+		<param type="text" name="elxisid" default="" dir="ltr" size="20" label="Elxis Id" description="ELXISID_DESC" />
+		<param type="text" name="edc_url" default="" dir="ltr" size="40" label="EDC_SERVER" description="EDC_SERVER_DESC" />
+		<param type="range" name="edc_limit" first="4" last="24" step="1" default="12" label="LIMIT" description="EDC_LIMIT_DESC" />
+		<param type="list" name="edc_ordering" default="c" label="EXT_ORDERING" dir="rtl" description="">
+			<option value="c">DATE</option>
+			<option value="m">LAST_MODIFIED</option>
+			<option value="d">DOWNLOADS</option>
+			<option value="a">ALPHABETICALLY</option>
+			<option value="r">USERS_RATING</option>
+		</param>
+		<param type="radio" name="edc_vcheck" default="1" label="VERSION_CHECK" description="VERSION_CHECK_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

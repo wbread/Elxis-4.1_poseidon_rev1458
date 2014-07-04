@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="component">
+	<name>com_user</name>
+	<title>User</title>
+	<created>2012-05-15 19:49:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Component User]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params group="MEMBERSLIST" collapsed="1">
+		<param type="list" name="nav_links" default="1" label="NAVIGATION_LINKS" dir="rtl" description="">
+			<option value="0">TOP</option>
+			<option value="1">BOTTOM</option>
+			<option value="2">TOP_BOTTOM</option>
+		</param>
+		<param type="comment" name="members_com" default="SELFDISPMEMBLI" label="" description="" />
+		<param type="radio" name="members_firstname" default="0" label="FIRSTNAME" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_lastname" default="0" label="LASTNAME" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_uname" default="1" label="USERNAME" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_groupname" default="1" label="GROUP" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_preflang" default="1" label="LANGUAGE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_country" default="0" label="COUNTRY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_website" default="0" label="WEBSITE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_gender" default="0" label="GENDER" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_registerdate" default="1" label="REGDATE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_lastvisitdate" default="1" label="LASTVISIT" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="members_profile_views" default="0" label="PROFILE_VIEWS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="PROFILE" collapsed="1">
+		<param type="radio" name="gravatar" default="0" label="Gravatar" description="Will display, for users not having an avatar image, an avatar from gravatar.com">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="range" name="profile_avatar_width" first="30" last="120" step="2" default="0" label="AVATAR_WIDTH" description="Avatar width in pixels" />
+		<param type="range" name="profile_comments" first="0" last="20" step="1" default="0" label="COMMENTS" dir="ltr" description="Number of latest user comments. Set 0 to disable showing comments" />	
+		<param type="radio" name="profile_twitter" default="1" label="Twitter" description="Allow users to display their Twitter statuses in their profile page?">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

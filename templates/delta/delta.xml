@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<package type="template" section="frontend">
+	<name>delta</name>
+	<title>Delta</title>
+	<created>2012-06-19 17:35:00</created>
+	<author>Ioannis Sannos</author>
+	<authoremail>info@isopensource.com</authoremail>
+	<authorurl>http://www.isopensource.com</authorurl>
+	<copyright>(C) 2008-2012 Is Open Source. All rights reserved</copyright>
+	<license>Creative Commons 3.0 Attribution-ShareAlike Unported</license>
+	<licenseurl>http://creativecommons.org/licenses/by-sa/3.0/</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[
+		Template Delta is a sample template for Elxis 4.x designed by Ioannis Sannos.<br />
+		Some features: Auto-hide side column, auto-colours (by Is Open Source), resize side column and footer boxes, RTL compatible, 
+		dynamic menus, APC cache, center aligned, jQuery, cross browser support, multi-sites compatible.<br />
+		<a href="../templates/delta/images/module_positions.png" title="Delta module positions" target="_blank">Template Delta module positions and layout.</a>
+	]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params>
+		<param type="radio" name="sitename" default="0" label="SITENAME" description="SITENAME_LOGO_DESC">
+            <option value="0">LOGO</option>
+            <option value="1">SITENAME</option>
+		</param>
+		<param type="file" name="logo" path="templates/delta/images/{multisite/}" filetype="png,jpg,jpeg,gif" maxsize="0" default="" label="LOGO" description="" />
+		<param type="text" name="slogan" default="" size="40" multilingual="1" dir="rtl" label="SLOGAN" description="" />
+		<param type="color" name="head_colour" default="54A3F4" label="HEAD_BG" description="Default value is 54A3F4" />
+		<param type="color" name="bgcolor" default="EEEEEE" label="BGCOLOUR" description="Default value is EEEEEE" />
+		<param type="list" name="pathway" default="2" dir="rtl" label="SHOW_PATHWAY" description="">
+            <option value="2">ALL_PAGES</option>
+            <option value="1">ALL_EXCEPT_FP</option>
+            <option value="0">HIDE</option>
+		</param>
+        <param type="radio" name="pathway_here" default="1" label="YOU_ARE_HERE" description="YOU_ARE_HERE_DESC">
+            <option value="0">HIDE</option>
+            <option value="1">SHOW</option>
+        </param>
+		<param type="color" name="pathway_colour" default="3D4653" label="PATHWAY_COLOUR" description="Default value is 3D4653" />
+	</params>
+	<params group="SIDE_COLUMN" groupid="1001" collapsed="0">
+		<param type="range" name="colwidth" first="160" last="300" step="5" default="200" label="COLUMN_WIDTH" description="" />
+		<param type="radio" name="hidecol_all" default="0" label="HIDE_ALL" description="HIDE_ALL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="hidecol_front" default="0" label="HIDE_FRONT" description="HIDE_FRONT_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="hidecol_path1" default="" dir="ltr" size="30" label="HIDE_PATH" description="HIDE_PATH_DESC" />
+		<param type="text" name="hidecol_path2" default="" dir="ltr" size="30" label="HIDE_PATH" description="HIDE_PATH_DESC" />
+		<param type="text" name="hidecol_path3" default="" dir="ltr" size="30" label="HIDE_PATH" description="HIDE_PATH_DESC" />
+	</params>
+	<params group="FOOTER" groupid="1002" collapsed="0">
+		<param type="color" name="footer_colour" default="3D4653" label="FOOTER_COLOUR" description="Default value is 3D4653" />
+		<param type="list" name="footer1_width" default="565" dir="ltr" label="LEFT_BOX_WIDTH" description="LEFT_BOX_WIDTH_DESC">
+            <option value="200">200</option>
+            <option value="240">240</option>
+            <option value="300">300</option>
+            <option value="360">360</option>
+            <option value="360">420</option>
+            <option value="463">HALF463</option>
+            <option value="520">520</option>
+            <option value="565">565</option>
+            <option value="620">620</option>
+            <option value="680">680</option>
+            <option value="720">720</option>
+            <option value="925">925</option>
+		</param>
+	</params>
+</package>

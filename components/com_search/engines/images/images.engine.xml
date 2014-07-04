@@ -1,0 +1,52 @@
+<package type="engine">
+	<name>images</name>
+	<title>Images</title>
+	<created>2013-03-05 12:23:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.1</version>
+	<description><![CDATA[Extends elxis search to images]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">search</package>
+	</dependencies>
+	<params>
+		<param type="range" name="limit" first="5" last="50" step="1" default="10" label="LIMIT" description="ITEMS_PER_PAGE" />
+		<param type="list" name="ordering" default="r" label="ORDERING" dir="rtl" description="DEFAULT_ORDERING">
+			<option value="r">RELEVANCY</option>
+			<option value="ta">TITLE_ASC</option>
+			<option value="td">TITLE_DSC</option>
+			<option value="sd">BIGGER_FIRST</option>
+			<option value="sa">SMALLER_FIRST</option>
+			<option value="dd">NEWER_FIRST</option>
+			<option value="da">OLDER_FIRST</option>
+		</param>
+		<param type="list" name="columns" default="2" label="COLUMNS" dir="ltr" description="NUMBER_COLUMNS_DESC">
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</param>
+		<param type="list" name="search_into" default="0" label="SEARCH_INTO" dir="rtl" description="SEARCH_INTO_DESC">
+			<option value="0" hide="1011">CONTENT</option>
+			<option value="1" show="1011">FILESYSTEM</option>
+			<option value="2" show="1011">BOTH</option>
+		</param>
+	</params>
+	<params groupid="1011" group="FSYSTEM_FOLDERS" collapsed="1">
+		<param type="comment" name="iengcom" default="FSYSTEM_FOLDERS_NOTE" label="" description="" />
+		<param type="text" name="dir1" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir2" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir3" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir4" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir5" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir6" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir7" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir8" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir9" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+		<param type="text" name="dir10" default="" label="FOLDER_PATH" dir="ltr" size="40" description="" />
+	</params>
+</package>

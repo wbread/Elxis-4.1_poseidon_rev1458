@@ -1,0 +1,65 @@
+/**
+Elxis CMS
+Module Administration profile (CSS)
+Author: Ioannis Sannos
+*/
+
+ul.aprofileul {
+	margin:0 5px; padding:0; list-style:none; height:32px;
+	position:relative; z-index:5000 !important; background:transparent; float:right;
+}
+ul.aprofileul li, ul.aprofileul ul, ul.aprofileul li ul, ul.aprofileul li ul li { margin:0; padding:0; list-style:none; border:0; }
+
+ul.aprofileul li {
+	padding:3px 10px 3px 22px; height:26px; float:left; width:auto; display:inline; position:relative;	
+	border:0; background:transparent url(useroff.png) no-repeat 2px 8px;
+}
+ul.aprofileul li:hover {
+    background:#F3F3F3 url(userblue.png) no-repeat 2px 8px;
+}
+ul.aprofileul li a.aproffirst {
+	margin:0; padding:0; border:0; outline:none;
+	font: bold 12px/26px Tahoma, Arial, sans-serif; color:#666; text-decoration:none; display:block;
+}
+ul.aprofileul li:hover a.aproffirst { color: #4c8dce; }
+ul.aprofileul li ul {
+	padding: 4px 8px; width:200px; display:none; position:absolute; top:100%; right: -1px; z-index:5000 !important; float:none;
+    background-color:#F3F3F3; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;
+}
+
+ul.aprofileul li ul li {
+	padding:3px 0; width:100%; display:block; text-align:left; height:auto; 
+	font: normal 12px/20px tahoma, verdana, serif; color:#333; background:transparent;
+}
+ul.aprofileul li ul li:hover { border:none; background:transparent; background-image: none; }
+
+ul.aprofileul li ul li.aprofseparator {
+	border:0; width: 100%; display: block; font: normal 12px/16px tahoma, verdana, serif; color:#333; height:16px; 
+	background:#F3F3F3 url(separator.png) 0 0 no-repeat;
+}
+img.aprofavatar { width:40px; height:40px; margin:2px 4px 2px 0px; padding:0; float:left; border:0; }
+
+a.aproflogout, a.aproflogout:hover, a.aproflogout:link, a.aproflogout:visited, a.aproflogout:active {
+	margin:0; padding: 0 0 0 18px; background: transparent url(logout.png) 0 0 no-repeat;
+	font: normal 12px/16px tahoma, verdana, serif; display:inline; text-decoration:none; color:#ff433a;
+}
+a.aproflogout:hover { color:#000; }
+
+a.aproflink, a.aproflink:hover, a.aproflink:link, a.aproflink:visited, a.aproflink:active {
+	margin:0; padding:0; border:0; background: none; color:#5282b3;
+	font: normal 12px/16px tahoma, verdana, serif; display:inline; text-decoration:none;
+}
+a.aproflink:hover { color:#000; }
+
+a.aprof_article, a.aprof_article:hover, a.aprof_article:link, a.aprof_article:visited, a.aprof_article:active {
+	margin:0; padding: 0 0 0 18px; background: transparent url(arrowright.png) 0 0 no-repeat; color:#5282b3;
+	font: normal 12px/16px tahoma, verdana, serif; display:block; text-decoration:none;
+}
+a.aprof_article:hover { color:#000; }
+
+.aprof_head {
+	margin:2px 0; padding:0 0 0 16px; font: bold 12px/16px tahoma, verdana, serif; color:#555;
+	background: transparent url(arrowdown.png) 0 2px no-repeat;
+}
+
+ul.aprofileul li:hover ul { display:block; }

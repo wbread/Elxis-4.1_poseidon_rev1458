@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="frontend">
+	<name>mod_ads</name>
+	<title>Advertisements</title>
+	<created>2013-04-25 18:39:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.1</version>
+	<description><![CDATA[Displays an advertisement text, image banner, flash or Google Adsense ads.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.x">elxis</dependency>
+	</dependencies>
+	<params>
+		<param type="list" name="source" default="0" label="SOURCE" description="SOURCE_DESC">
+			<option value="0" show="1001,1005" hide="1002,1003,1004">TEXT</option>
+			<option value="1" show="1002,1005" hide="1001,1003,1004">IMAGE</option>
+			<option value="2" show="1003" hide="1001,1002,1004,1005">Flash</option>
+			<option value="3" show="1004" hide="1001,1002,1003,1005">Google AdSense</option>
+		</param>
+	</params>
+	<params groupid="1001" collapsed="0">
+		<param type="text" name="text1" default="" multilingual="1" size="60" maxlength="200" dir="rtl" label="ADS_TEXT_1" description="ADS_TEXT_DESC" />
+		<param type="text" name="text2" default="" multilingual="1" size="60" maxlength="200" dir="rtl" label="ADS_TEXT_2" description="ADS_TEXT_DESC" />
+		<param type="text" name="text3" default="" multilingual="1" size="60" maxlength="200" dir="rtl" label="ADS_TEXT_3" description="ADS_TEXT_DESC" />
+		<param type="text" name="text4" default="" multilingual="1" size="60" maxlength="200" dir="rtl" label="ADS_TEXT_4" description="ADS_TEXT_DESC" />
+	</params>
+	<params groupid="1002" collapsed="1">
+		<param type="imagelist" name="image1" default="" label="ADS_IMAGE_1" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+		<param type="imagelist" name="image2" default="" label="ADS_IMAGE_2" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+		<param type="imagelist" name="image3" default="" label="ADS_IMAGE_3" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+		<param type="imagelist" name="image4" default="" label="ADS_IMAGE_4" directory="media/images/{multisite/}ads/" description="ADS_IMAGE_DESC" />
+	</params>
+	<params groupid="1003" collapsed="1">
+		<param type="text" name="flash1" default="" size="40" maxlength="200" dir="ltr" label="ADS_FLASH_1" description="ADS_FLASH_DESC" />
+		<param type="text" name="flash2" default="" size="40" maxlength="200" dir="ltr" label="ADS_FLASH_2" description="ADS_FLASH_DESC" />
+		<param type="text" name="flash3" default="" size="40" maxlength="200" dir="ltr" label="ADS_FLASH_3" description="ADS_FLASH_DESC" />
+		<param type="text" name="flash4" default="" size="40" maxlength="200" dir="ltr" label="ADS_FLASH_4" description="ADS_FLASH_DESC" />
+		<param type="text" name="width" default="100" size="5" maxlength="4" dir="ltr" label="WIDTH" description="FLASH_WIDTH_DESC" />
+		<param type="text" name="height" default="100" size="5" maxlength="4" dir="ltr" label="HEIGHT" description="FLASH_HEIGHT_DESC" />
+	</params>
+	<params groupid="1004" collapsed="1">
+		<param type="textarea" name="adsense" default="" cols="60" rows="5" dir="ltr" label="ADSENSE_CODE" description="ADSENSE_CODE_DESC" />
+	</params>
+	<params groupid="1005" collapsed="0">
+		<param type="text" name="link1" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK_1" description="ADS_LINK_DESC" />
+		<param type="text" name="link2" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK_2" description="ADS_LINK_DESC" />
+		<param type="text" name="link3" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK_3" description="ADS_LINK_DESC" />
+		<param type="text" name="link4" default="" multilingual="1" size="40" maxlength="200" dir="ltr" label="ADS_LINK_4" description="ADS_LINK_DESC" />
+	</params>
+	<params groupid="1006" collapsed="0">
+		<param type="list" name="target" default="0" label="TARGET" description="TARGET_DESC">
+			<option value="0">NEW_WINDOW</option>
+			<option value="1">SAME_WINDOW</option>
+		</param>
+		<param type="radio" name="border" default="1" label="BORDER" description="BORDER_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

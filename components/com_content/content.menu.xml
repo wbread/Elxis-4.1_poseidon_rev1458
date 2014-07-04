@@ -1,0 +1,18 @@
+<elxismenu component="content">
+	<frontend>
+		<menu name="generator">
+			<title lang="en">Content special</title>
+			<title lang="el">Ειδικό περιεχόμενο</title>
+			<items>
+                <item type="link" link="content:feeds.html" file="" popup="0" minlevel="0" secure="0" target="_self">
+                	<title lang="en">Feeds central</title>
+                	<title lang="el">Κέντρο RSS</title>
+                </item>
+                <item type="link" link="content:tags.html?tag=elxis" file="" popup="0" minlevel="0" secure="0" target="_self">
+                	<title lang="en">Articles tagged as elxis</title>
+                	<title lang="el">Άρθρα με ετικέτα elxis</title>
+                </item>
+			</items>
+		</menu>
+	</frontend>
+</elxismenu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="component">
+	<name>com_etranslator</name>
+	<title>Translator</title>
+	<created>2012-02-12 12:46:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Manage multilingual content.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params>
+		<param type="text" name="bingapi" default="" label="Bing API Id" description="Enables automatic translation via Microsoft Bing service" />
+	</params>
+</package>

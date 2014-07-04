@@ -1,0 +1,17 @@
+/**
+Elxis CMS
+Copyright (c) 2006-2013 Elxis CMS (http://www.elxis.org). All rights reserved.
+CSS for Images search engine
+*/
+.elx_ieng_container { margin: 15px 0; padding: 0; }
+.elx_ieng_box { float: left; width:130px; height:140px; background-color: #fff; border: 1px solid #fff; text-align: center; margin: 0 10px 10px 0; padding: 0; }
+.elx_ieng_box-rtl { float: right; width:130px; height:140px; background-color: #fff; border: 1px solid #fff; text-align: center; margin: 0 0 10px 10px; padding: 0; }
+.elx_ieng_box:hover, .elx_ieng_box-rtl:hover { border-color: #bbb; background-color: #efefef; }
+.elx_ieng_imgbox { margin: 2px auto; padding: 0; border: 0; width: 106px; height: 106px; }
+.elx_ieng_imgbox img { text-align: center; margin: 0; padding: 2px; border: 1px solid #ddd; }
+.elx_ieng_notes { margin: 0; padding: 0; text-align: center; font: normal 11px/14px tahoma, arial, serif; color: #666; }
+.elx_ieng_box:hover .elx_ieng_notes, .elx_ieng_box-rtl:hover .elx_ieng_notes { color: #000; }
+.elx_ieng_box:hover .elx_ieng_imgbox img, .elx_ieng_box-rtl:hover .elx_ieng_imgbox img { border: 1px solid #888; }
+figure.elx_ieng_fig { float:left; width:110px; text-align:center; margin:0 5px 5px 0; padding:0; }
+figure.elx_ieng_fig a { text-decoration:none; }
+figure.elx_ieng_fig img { width:100px; max-height:100px; padding:3px; background-color:#fff; border:1px solid #ccc; }

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_iosslider</name>
+	<title>IOS Slider</title>
+	<created>2012-11-10 08:31:00</created>
+	<author>Ioannis Sannos</author>
+	<authoremail>info@isopensource.com</authoremail>
+	<authorurl>http://www.isopensource.com</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.0</version>
+	<description><![CDATA[The module slides article or custom images, ideal for the site frontopage. If you slide article images then 
+	only articles with view access for visitors will be loaded. If standard cache is disabled the module will use APC caching if it is 
+	enabled in general configuration. The APC caching time is 10 minutes.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params>
+		<param type="list" name="source" default="0" label="SOURCE" description="SOURCE_DESC">
+			<option value="0" hide="1001,1002,1003">LATEST_ARTICLES</option>
+			<option value="1" show="1001" hide="1002,1003">CATEGORY</option>
+			<option value="2" show="1002" hide="1001,1003">MULTIPLE_CATEGORIES</option>
+			<option value="3" show="1003" hide="1001,1002">USER_IMAGES</option>
+		</param>
+	</params>
+	<params groupid="1001" collapsed="1">
+		<param type="category" name="catid" default="" dir="ltr" label="CATEGORY" description="" />
+		<param type="radio" name="subcats" default="0" label="INCL_SUBCATEGORIES" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params groupid="1002" collapsed="1">
+		<param type="text" name="catids" default="" dir="ltr" label="CATEGORIES" description="COMMA_SEP_CIDS" />
+	</params>
+	<params groupid="1003" collapsed="1">
+		<param type="text" name="title1" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link1" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image1" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title2" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link2" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image2" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title3" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link3" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image3" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title4" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link4" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image4" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title5" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link5" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image5" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+		<param type="text" name="title6" default="" multilingual="1" dir="rtl" label="TITLE" description="" />
+		<param type="text" name="link6" default="" dir="ltr" label="LINK" description="" />
+		<param type="file" name="image6" path="modules/mod_iosslider/images/{multisite/}" filetype="png,jpg,jpeg" maxsize="0" default="" label="IMAGE" description="" />
+	</params>
+	<params>
+		<param type="list" name="thumbspos" default="0" label="THUMBS_POS" description="">
+			<option value="0">BOTTOM</option>
+			<option value="1">RIGHT</option>
+			<option value="2">NO_THUMBS</option>
+		</param>
+		<param type="text" name="thumbsdims" default="" dir="ltr" size="7" maxlength="7" label="THUMBS_DIMS" description="THUMBS_DIMS_DESC" />
+		<param type="range" name="limit" first="1" last="10" step="1" default="5" label="LIMIT" description="" />
+		<param type="text" name="img_width" default="470" label="IMAGE_WIDTH" description="IMAGE_WIDTH_DESC" />
+		<param type="text" name="img_height" default="310" label="IMAGE_HEIGHT" description="IMAGE_HEIGHT_DESC" />
+		<param type="radio" name="autoslide" default="0" label="AUTO_SLIDE" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="color" name="bgcolour" default="EEEEEE" label="BACKGROUND_COLOUR" description="SET_ZERO_DISABLE" />
+		<param type="color" name="bordercolour" default="BBBBBB" label="BORDER_COLOUR" description="SET_ZERO_DISABLE" />
+	</params>
+	<params group="OTHER_OPTIONS" collapsed="0">
+		<param type="radio" name="cache" default="2" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="2">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+	</params>
+</package>

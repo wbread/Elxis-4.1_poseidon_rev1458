@@ -1,0 +1,68 @@
+##
+# Elxis 4.x htaccess file
+# Copyright (C) 2006-2012 Elxis.org. All rights reserved.
+# License: http://www.gnu.org/copyleft/gpl.html GNU/GPL
+# Elxis CMS is a Free Software
+##
+
+# Uncomment the lines bellow to add support for HTML5 video and audio
+# AddType video/ogg .ogm
+# AddType video/ogg .ogv
+# AddType video/ogg .ogg
+# AddType video/webm .webm
+# AddType audio/webm .weba
+# AddType video/mp4 .mp4
+# AddType video/x-m4v .m4v
+
+## Uncomment the following line, if it produces erors, comment it again
+# Options -Indexes +FollowSymLinks
+
+#
+#  mod_rewrite in use
+#
+
+RewriteEngine On
+
+# The following line tells the web server where your Elxis installation is located in relation 
+# to the web server root directory. By default this is set to the www root folder ( RewriteBase / ).
+# If you have installed Elxis in a sub-folder then set this path properly.
+# For example if your elxis site is accessible via this URL http://www.example.com/elxis/
+# You should set: RewriteBase /elxis/
+
+RewriteBase /
+
+#
+# Rewrite rules for sample multisites appeared as sub-folders of the main site
+# RewriteRule ^one/estia/inner.php estia/inner.php [L]
+# RewriteRule ^one/inner.php(.*) inner.php [L]
+# RewriteRule ^one/(.*) $1
+# RewriteRule ^two/estia/inner.php estia/inner.php [L]
+# RewriteRule ^two/inner.php(.*) inner.php [L]
+# RewriteRule ^two/(.*) $1
+#
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+# If you have renamed the administration folder change "estia" to the name you have set.
+RewriteRule ^estia/inner.php(.*) estia/inner.php [L]
+RewriteRule ^estia/(.*) estia/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php
+
+#
+## Security rules. Comment them if they cause problems to your site
+#
+# Block out any script trying to base64_encode crap to send via URL
+# This rule is commented because it may cause some Elxis features to not work!
+# RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+# Block out any script that includes a <script> tag in URL
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Send all blocked request to homepage with 403 Forbidden error!
+RewriteRule ^(.*)$ index.php [F,L]

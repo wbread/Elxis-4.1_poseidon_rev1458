@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="component">
+	<name>com_wrapper</name>
+	<title>Wrapper</title>
+	<created>2011-10-21 18:33:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Component Wrapper]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<files />
+	<language>
+		<en>en.com_wrapper.php</en>
+		<el>el.com_wrapper.php</el>
+	</language>
+	<params />
+</package>

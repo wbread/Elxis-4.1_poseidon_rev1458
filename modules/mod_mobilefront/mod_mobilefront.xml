@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="frontend">
+	<name>mod_mobilefront</name>
+	<title>Mobile Frontpage</title>
+	<created>2013-04-27 16:57:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.0</version>
+	<description><![CDATA[Displays a list of categories and articles in a mobile friendly style.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.1+">elxis</dependency>
+		<dependency type="component" version="1.x">content</dependency>
+	</dependencies>
+	<params>
+		<param type="list" name="style" default="2" dir="rtl" label="STYLE" description="">
+			<option value="0">CATEGORIES</option>
+			<option value="1">ARTICLES</option>
+			<option value="2">CATEGORIES_ARTICLES</option>
+		</param>
+		<param type="radio" name="subcategories" default="1" label="SUBCATEGORIES" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="category" name="pcatid" onlyroot="0" default="0" dir="rtl" label="CATEGORY" description="CATEGORY_ROOT_DESC" />
+		<param type="radio" name="subtitle" default="1" label="SUBTITLE" description="SHOW_ARTSUB">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="introtext" default="1" dir="rtl" label="INTROTEXT" description="INTROTEXT_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+			<option value="2">YES_SUBEMPTY</option>
+		</param>
+		<param type="range" name="introlimit" first="60" last="500" step="20" default="200" dir="ltr" label="TEXT_LIMIT" description="TEXT_LIMIT_DESC" />
+		<param type="radio" name="image" default="1" dir="ltr" label="IMAGE" description="SHOW_ARTICLE_IMAGE">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="date" default="1" dir="ltr" label="DATE" description="SHOW_ARTICLE_DATE">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="range" name="artspercat" first="1" last="20" step="1" default="5" dir="ltr" label="ARTS_PER_CTG" description="ARTS_PER_CTG_DESC" />
+		<param type="range" name="maxarticles" first="1" last="50" step="1" default="10" dir="ltr" label="NUM_ARTICLES" description="NUM_ARTICLES_DESC" />
+	</params>
+	<params group="GENERAL_OPTIONS" collapsed="0">
+		<param type="list" name="cache" default="1" dir="rtl" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="1">YES_FOR_VISITORS</option>
+			<option value="2">YES_FOR_ALL</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+	</params>	
+</package>

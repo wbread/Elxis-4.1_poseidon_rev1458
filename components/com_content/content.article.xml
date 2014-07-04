@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elxisparameters type="component" component="com_content">
+	<params group="DATE_AUTHOR" collapsed="0">
+		<param type="list" name="art_dateauthor" default="-1" label="DATE_AUTHOR" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">CREATED_DATE</option>
+			<option value="2">CREATED_DATE_AUTHOR</option>
+			<option value="3">MODIFIED_DATE</option>
+			<option value="4">MODIFIED_DATE_AUTHOR</option>
+			<option value="5">AUTO_DATE</option>
+			<option value="6">AUTO_DATE_AUTHOR</option>
+		</param>
+		<param type="list" name="art_dateauthor_pos" default="-1" label="DATE_AUTHOR_POSITION" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">TOP</option>
+			<option value="1">BOTTOM</option>
+		</param>
+	</params>
+	<params group="ARTICLE_IMAGE" collapsed="0">
+		<param type="list" name="art_img" default="-1" label="IMAGE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="1">MEDIUM_IMG_TOP</option>
+			<option value="2">MEDIUM_IMG_LEFT</option>
+			<option value="3">MEDIUM_IMG_RIGHT</option>
+			<option value="4">LARGE_IMG_TOP</option>
+			<option value="5">LARGE_IMG_LEFT</option>
+			<option value="6">LARGE_IMG_RIGHT</option>
+		</param>
+	</params>
+	<params group="ADDITIONAL_FUNC" collapsed="0">
+		<param type="list" name="art_print" default="-1" label="PRINT" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="list" name="art_email" default="-1" label="EMAIL_TO_FRIEND" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="list" name="art_hits" default="-1" label="HITS" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+	</params>
+	<params group="COMMENTS" collapsed="0">
+		<param type="list" name="art_comments" default="-1" label="COMMENTS" dir="rtl" description="ALLOW_COMMENTS_ARTICLE">
+			<option value="-1">CATEGORY_SETTING</option>
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+	<params group="AUTO_LINKS" collapsed="0">
+		<param type="list" name="art_tags" default="-1" label="TAGS" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="list" name="art_chain" default="-1" label="ARTICLES_CHAIN" dir="rtl" description="ARTICLES_CHAIN_DESC">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">LINKS</option>
+			<option value="2">LINKS_IMAGES</option>
+		</param>
+	</params>
+</elxisparameters>

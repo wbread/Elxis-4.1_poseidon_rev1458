@@ -1,0 +1,26 @@
+/**
+Elxis CMS
+Copyright (c) 2006-2013 Elxis CMS ( http://www.elxis.org ). All rights reserved.
+CSS for YouTube search engine
+*/
+
+.elx_yeng_container { margin: 15px 0; padding: 0; }
+.elx_yeng_box { float:left; width:170px; height:175px; background-color: #fff; border: 1px solid #fff; text-align: left; margin: 0 10px 10px 0; padding: 0; }
+.elx_yeng_box-rtl { float:right; width:170px; height:175px; background-color: #fff; border: 1px solid #fff; text-align: right; margin: 0 0 10px 10px; padding: 0; }
+.elx_yeng_mobbox { float:left; width:170px; background-color: #fff; border: 1px solid #fff; text-align:left; margin: 0 10px 10px 0; padding: 0; }
+.elx_yeng_mobbox-rtl { float:right; width:170px; background-color: #fff; border: 1px solid #fff; text-align:right; margin: 0 0 10px 10px; padding: 0; }
+.elx_yeng_imgbox { position: relative; margin: 2px auto; padding: 0; border: 0; }
+.elx_yeng_imgbox img { text-align: center; margin: 0 auto; padding: 2px; border: 1px solid #ddd; }
+.elx_yeng_duration { position:absolute; top:4px; right:10px; background-color:#333; color:#fff; font:normal 11px/13px tahoma, arial, serif; padding: 1px; margin: 0; opacity:0.6; filter:alpha(opacity=60); }
+img.elx_yeng_play { margin:0; padding:0; border:none; position: absolute; top: 34px; left: 64px; opacity:0.6; filter:alpha(opacity=60); }
+.elx_yeng_notes, .elx_yeng_notes-rtl { margin: 0; padding: 0; text-align: left; font: normal 11px/14px verdana, arial, serif; color: #555; overflow: hidden; }
+.elx_yeng_notes-rtl { text-align: right; }
+.elx_yeng_notes span, .elx_yeng_notes-rtl span { color: #8090c4; }
+a.elx_yeng_title, a.elx_yeng_title:link, a.elx_yeng_title:hover, a.elx_yeng_title:visited, a.elx_yeng_title:active {
+	text-decoration: none; color: #4774b0; font: bold 12px/14px tahoma, arial, serif;
+}
+a.elx_yeng_title:hover { text-decoration: underline; }
+.elx_yeng_box:hover .elx_yeng_imgbox img, .elx_yeng_box-rtl:hover .elx_yeng_imgbox img, .elx_yeng_mobbox:hover .elx_yeng_imgbox img, .elx_yeng_mobbox-rtl:hover .elx_yeng_imgbox img { border: 1px solid #666; }
+.elx_yeng_box:hover .elx_yeng_imgbox img.elx_yeng_play, .elx_yeng_box-rtl:hover .elx_yeng_imgbox img.elx_yeng_play, .elx_yeng_mobbox:hover .elx_yeng_imgbox img.elx_yeng_play, .elx_yeng_mobbox-rtl:hover .elx_yeng_imgbox img.elx_yeng_play {
+	border:none; opacity:1.0; filter:alpha(opacity=100);
+}

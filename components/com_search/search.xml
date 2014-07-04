@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="component">
+	<name>com_search</name>
+	<title>Search</title>
+	<created>2012-02-28 19:00:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Component Search]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params>
+		<param type="radio" name="summary" default="0" label="SEARCH_SUMMARY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="pagination" default="1" label="PAGINATION_LINKS" dir="rtl" description="">
+			<option value="0">TOP</option>
+			<option value="1">BOTTOM</option>
+			<option value="2">BOTH</option>
+		</param>
+		<param type="list" name="formposition" default="1" label="FORM_POSITION" dir="rtl" description="FORM_POSITION_DESC">
+			<option value="0">ABOVE_RESULTS</option>
+			<option value="1">BELLOW_RESULTS</option>
+		</param>
+	</params>
+	<params group="OpenSearch" collapsed="0">
+		<param type="comment" name="os_com" default="OPENSEARCH_INFO" label="" description="" />
+		<param type="text" name="os_title" default="" dir="ltr" label="OPENSEARCH_TITLE" description="OPENSEARCH_TITLE_DESC" />
+		<param type="radio" name="os_suggest" default="1" label="SUGGESTIONS" description="SUGGESTIONS_INFO">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="os_add" default="1" label="ADD_TO_BROWSER" description="ADD_TO_BROWSER_INFO">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</package>

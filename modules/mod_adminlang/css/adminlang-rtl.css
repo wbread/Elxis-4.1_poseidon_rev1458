@@ -1,0 +1,38 @@
+/**
+Elxis CMS
+Module Administration language (CSS - RTL version)
+Author: Ioannis Sannos
+*/
+
+ul.admlangul {
+	margin:0 5px; padding:0; list-style:none; height:32px;
+	position:relative; z-index:5000 !important; background:transparent; float:left;
+}
+ul.admlangul li, ul.admlangul ul, ul.admlangul li ul, ul.admlangul li ul li { margin:0; padding:0; list-style:none; border:0; }
+ul.admlangul li {
+	padding:3px 10px 3px 10px; height:26px; float:right; width:auto; display:inline; position:relative; border:0; background:transparent;
+}
+ul.admlangul li:hover {background:#F3F3F3; }
+
+ul.admlangul li a {
+	margin:0; padding:0; border:0; outline:none;
+	font: bold 12px/26px Tahoma, Arial, sans-serif; color:#666; text-decoration:none; display:block;
+}
+ul.admlangul li:hover a { color: #4c8dce; }
+ul.admlangul li ul {
+	padding:4px 4px; width:280px; display:none; position:absolute; top:100%; left: -1px; z-index:5000 !important; float:none;
+    background-color:#F3F3F3; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc;
+}
+ul.admlangul li ul li {
+	padding:2px 2px; width:130px; display:block; text-align:right; height:auto; float:right;
+	font: normal 12px/20px tahoma, verdana, serif; color:#333; background:transparent;
+}
+ul.admlangul li ul li:hover { border:none; background:transparent; background-image: none; }
+ul.admlangul li ul li.admlangsep { margin: 0 0 0 5px; border-left: 1px solid #ccc; }
+ul.admlangul li ul li a { font: normal 12px/16px tahoma, verdana, serif; color: #4c8dce; text-decoration:none; }
+ul.admlangul li ul li a:hover { font-weight: normal; color: #000; }
+ul.admlangul li ul li a.admlangcur { color: #666; }
+ul.admlangul li ul li a.admlangcur:hover { color: #cc0000; }
+ul.admlangul li img { height:16px; width:16px; margin:4px 0 0 5px; padding:0; border:0; vertical-align:middle; float:right; }
+ul.admlangul li ul li img { height:16px; width:16px; margin:0 0 0 5px; padding:0; border:0; vertical-align:middle; float:right; }
+ul.admlangul li:hover ul { display:block; }

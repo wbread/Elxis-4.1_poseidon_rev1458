@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module" section="backend">
+	<name>mod_adminmenu</name>
+	<title>Administration menu</title>
+	<created>2012-03-06 21:20:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Generates the administration area menu.]]></description>
+	<dependencies>
+		<dependency type="core" version="4.x">elxis</dependency>
+	</dependencies>
+	<params>
+		<param type="radio" name="show_icons" default="1" label="SHOW_ICONS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+        <param type="radio" name="expand_com" default="1" label="EXPAND_COM" description="EXPAND_COM_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+        <param type="list" name="expand_ctg" default="1" label="EXPAND_CTG" description="">
+			<option value="0">NO</option>
+			<option value="1">LEVEL_1</option>
+            <option value="2">LEVEL_2</option>
+		</param>
+		<param type="radio" name="cache" default="0" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="2">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+	</params>
+</package>

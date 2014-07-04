@@ -1,0 +1,136 @@
+================================
+ELXIS PUBLIC LICENSE (EPL) 
+Version 1.1 - September 02, 2012
+================================
+
+Copyright (C) 2012 Ioannis Sannos - Elxis Team ( http://www.elxis.org/ ).
+Everyone is permitted to copy and distribute verbatim copies of this license 
+document, but changing it is not allowed.
+
+
+== Preamble ==
+
+The Elxis Public License (EPL) is a free license for software and other kinds of 
+works although it was initially written for Elxis CMS. The scope of this license 
+is to make sure Elxis will always be an open source software released for free to 
+the public in its original form. In order to protect Elxis from license violations 
+from which, unfortunately, we have suffered in the past, EPL prohibits you from 
+renaming Elxis, removing copyright notes and share modified copies of it. The terms 
+and conditions described in this document, besides Elxis, applies to any software 
+released under the EPL license.
+
+
+== Definitions ==
+
+    * "This License" refers to version 1.1 of the Elxis Public License (EPL).
+    * "Program" or "Software" refers to any copyrightable work licensed 
+        under this License.
+    * To "modify" a work means to copy from or adapt all or part of the work in 
+    a fashion requiring copyright permission, other than the making of an exact 
+        copy. The resulting work is called a "modified version" of the earlier work 
+        or a work "based on" the earlier work.
+    * A "fork" is a modified and/or renamed copy of the original software distributed 
+        and developed by other than the original author. EPL does not allow forks.
+    * "CMS" Content Management System
+    * "Elxis CMS" or just "Elxis": Elxis content management system of version 4.0 or newer.
+    * EPL: Elxis Public License (this license).
+    * Elxis Team: Elxis development team, which has leader and legal representative 
+        Ioannis Sannos.
+    * Extensions: Software packages that can be installed from Elxis administration 
+        console and extend Elxis features (modules, components, templates, plugins, 
+        search engines, authentication methods or other).
+
+
+== Terms and conditions ==
+
+(A) You are allowed to:
+
+    * Install and use the Software on any web site, even commercial ones, and for 
+        any purpose you like.
+    * Provide paid services for the Software (custom development, web hosting, 
+        support, training, etc).
+    * Develop, publish and sell extensions for the Software. These extensions can 
+        be either free or commercial (see note 1), and should be installed after 
+        the initial Software installation. You cannot include them into the original 
+        Software package even if they are free (you are not allowed to re-pack or 
+        enrich the original Software).
+    * Share, re-distribute and publish original versions of the Software as released 
+        by its original author (see note 2).
+    * Modify the Software for your own web site only (see note 3).
+    * Write, publish and sell paper or electronic books (e-books) and documentation 
+        for the Software.
+
+
+(B) You are NOT allowed to:
+
+    * Re-brand or rename the Software.    
+    * Modify or remove the Software copyright notes.
+    * Modify or remove this license (EPL).
+    * Share, publish or distribute modified versions of the Software (forks are 
+        not allowed).
+    * Sell the Software.
+    * Perform any action on the Software not clearly permitted by this license.
+
+
+(C) Disclaimer of Warranty
+
+There is no warrant for the Software, to the extent permitted by applicable law. 
+Except when otherwise stated in writing the copyright holders and/or other parties 
+provide the Software "as is" without warranty of any kind, either expressed or implied, 
+including, but not limited to, the implied warranties of merchantability and fitness 
+for a particular purpose. The entire risk as to the quality and performance of the 
+Software is with you. Should the Software prove defective, you assume the cost of 
+all necessary servicing, repair and correction on your web site.
+
+
+(D) Limitation of Liability
+
+In no event unless required by applicable law or agreed to in writing will any copyright 
+holder bye liable to you for damages, including any general, special, incidental or 
+consequential damages arising out of the use or inability to use the Software (including 
+but not limited to loss of data or data being rendered inaccurate or losses sustained 
+by you or third parties or a failure of the Software to operate with any other programs), 
+even if such holder has been advised of the possibility of such damages.
+
+
+(E) Notes
+
+    (1) The third party extensions can be of a different license than EPL.
+    (2) In case of Elxis CMS the original author is Elxis Team and the distribution 
+        source of the Software is the elxis.org web site (http://www.elxis.org) 
+        or other web site managed by Elxis Team.
+    (3) Modifications are allowed in the source code for private use only (your web 
+        site). In any case you can't rename the Software, re-brand it, or change the 
+        original copyright notes. You are not allowed to re-pack a modified version 
+        of the Software, re-distribute it, or use it in another web site.
+    (4) Elxis copyright holder is Ioannis Sannos, legal representative of Elxis Team.
+    (5) Improvements, fixes and new ideas should be sent to the original author of the 
+        Software for inclusion in the official release.
+    (6) Elxis Team, Ioannis Sannos and any other Software authors licensed under EPL 
+        are not responsible for any damages that may occur to your web site such as 
+        data or money loss by the use of the Software.
+    (7) Any rights not stated in this license are prohibited. In case you have 
+        questions or you need a special permission, we encourage you to ask written 
+        permission by the Software author (Ioannis Sannos / Elxis Team in case of 
+        Elxis CMS). 
+
+
+== Apply EPL to your own Software ==
+
+If you have developed a program and you want to release it under the Elxis Public 
+License attach the following notices to the start of each source file of your program.
+
+    {one line to give the program's name and a brief idea of what it does.}
+    Copyright: (C) {year}  {name of author} {author's URL (if any)}
+    License: Elxis Public License ( http://www.elxis.org/elxis-public-license.html )
+    {Program name} is free software. Read the license for details.
+
+You may also include a full copy of EPL into your software package.
+ 
+
+
+Elxis Team
+September 02, 2012
+Athens, Greece
+http://www.elxis.org
+

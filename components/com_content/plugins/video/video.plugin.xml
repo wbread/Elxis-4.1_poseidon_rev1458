@@ -1,0 +1,45 @@
+<package type="plugin">
+	<name>video</name>
+	<title>HTML5 video</title>
+	<created>2012-04-26 19:59:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Displays HTML5 video (ogv, ogg, mp4, webm) inside Elxis articles. Supports subtitles and posters.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params>
+        <param type="text" name="width" default="480" label="WIDTH" description="VIDEO_WIDTH" />
+        <param type="text" name="height" default="270" label="HEIGHT" description="VIDEO_HEIGHT" />
+		<param type="radio" name="autoplay" default="0" label="AUTOPLAY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="controls" default="1" label="SHOW_CONTROLS" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="loop" default="0" label="LOOP" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="subtitles" default="0" label="SUBTITLES" description="SUBTITLES_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="theme" default="default" label="THEME" description="PLAYER_COLTHEME">
+			<option value="default">default</option>
+			<option value="monoblue">monoblue</option>
+			<option value="monochrome">monochrome</option>
+			<option value="monochrome.fixed">monochrome fixed</option>
+			<option value="vim">vim</option>
+		</param>
+	</params>
+</package>

@@ -1,0 +1,83 @@
+<package type="plugin">
+	<name>map</name>
+	<title>Google Maps</title>
+	<created>2013-03-05 12:37:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.1</version>
+	<description><![CDATA[This plugin allows you to display Google maps inside Elxis articles. The plugin uses Google Maps version 3 API.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params>
+        <param type="text" name="key" default="" label="GOOGLE_KEY" description="GOOGLE_KEY_DESC" />
+        <param type="text" name="width" default="550" label="MAP_WIDTHL" description="MAP_WIDTHD" />
+        <param type="text" name="height" default="400" label="MAP_HEIGHTL" description="MAP_HEIGHTD" />
+		<param type="list" name="mtype" default="ROADMAP" dir="ltr" label="MAP_TYPEL" description="MAP_TYPED">
+			<option value="ROADMAP">ROADMAP</option>
+			<option value="SATELLITE">SATELLITE</option>
+			<option value="HYBRID">HYBRID</option>
+			<option value="TERRAIN">TERRAIN</option>
+		</param>
+		<param type="radio" name="mtypecontrol" default="1" label="MAP_TYPECNTRLL" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="list" name="mtypecontrolopts" default="DEFAULT" label="MAP_TYPECNTRLOPTSL" description="">
+			<option value="DEFAULT">DEFAULT</option>
+			<option value="HORIZONTAL_BAR">HORIZONTAL_BAR</option>
+			<option value="DROPDOWN_MENU">DROPDOWN_MENU</option>
+		</param>
+		<param type="list" name="mzoom" default="13" label="MAP_MZOOML" description="MAP_MZOOMD">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</param>
+		<param type="radio" name="mzoomcontrol" default="1" label="MAP_ZOOMCNTRLL" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>	
+		<param type="list" name="mzoomcontrolopts" default="DEFAULT" label="MAP_ZOOMCNTRLOPTSL" description="">
+			<option value="DEFAULT">DEFAULT</option>
+			<option value="SMALL">SMALL</option>
+			<option value="LARGE">LARGE</option>
+		</param>	
+		<param type="radio" name="mnavcontrol" default="1" label="MAP_NAVCNTRLL" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>	
+		<param type="list" name="mnavcontrolopts" default="DEFAULT" label="MAP_NAVCNTRLOPTSL" description="">
+			<option value="DEFAULT">DEFAULT</option>
+			<option value="SMALL">SMALL</option>
+			<option value="ANDROID">ANDROID</option>
+			<option value="ZOOM_PAN">ZOOM_PAN</option>
+		</param>
+		<param type="radio" name="mscale" default="1" label="MAP_MSCALEL" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>								
+	</params>
+</package>

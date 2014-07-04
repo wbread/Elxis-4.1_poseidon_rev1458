@@ -1,0 +1,33 @@
+/**
+Package			Elxis CMS
+Subpackage		Templates / Aiolos
+Author			Stavros Stratakis ( http://www.webgiftgr.com )
+Copyright		(c) 2009-2012 Webgift web services (http://www.webgiftgr.com). All rights reserved.
+License			Creative Commons 3.0 Attribution-ShareAlike Unported ( http://creativecommons.org/licenses/by-sa/3.0/ )
+Date			2012-06-07 21:38:00
+Description 	Grey CSS stylesheet for template Aiolos
+*/
+
+div.leftcolumn h3, div.rightcolumn h3{color:#333;font-size:13px;}
+div.leftcolumn div.module h3, div.rightcolumn div.module h3{width:90%; margin:5px 3px; background-color: #f8f8f9; border: 1px solid #ccc; -moz-border-radius: 3px;border-radius: 3px;}
+div.leftcolumn div.module div.elx_short_box h3, div.rightcolumn div.module div.elx_short_box h3 {border:none; background:none; box-shadow:none;}
+/* HORIZONTAL DROP DOWN MENU */
+ul.elx_menu a:hover, ul.elx_menu li:hover a, ul.elx_menu li.menu_active a { color:#333; background: url(../images/grey-mbg.png) 0px 0 repeat-x;}
+ul.elx_menu li a:active { color:#888; }
+/* 1st level */
+ul.elx_menu li:hover li a { float: none; width:auto; background:#F3F3F3; }
+ul.elx_menu li:hover li a:hover, ul.elx_menu li:hover li:hover a { background: #DADADA; color: #333; }
+ul.elx_menu li:hover li a:active { background:#DADADA; color:#333; }
+/* 2nd level */
+ul.elx_menu li:hover li:hover li a { background: #F3F3F3; color:#333; }
+
+ul.elx_menu li:hover li:hover li a:hover, ul.elx_menu li:hover li:hover li:hover a {
+    background:#DADADA !important; color: #333;
+}
+ul.elx_menu li:hover li:hover li a:active { background: #DADADA; color:#333; }
+
+/* 3rd level */
+ul.elx_menu li:hover li:hover li:hover li a { background:#F3F3F3; color:#333; }
+ul.elx_menu li:hover li:hover li:hover li a:hover { background:#DADADA; color:#333; }
+ul.elx_menu li:hover li:hover li:hover li a:active { background:#DADADA; color:#333; }
+

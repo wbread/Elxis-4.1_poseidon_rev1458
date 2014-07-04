@@ -1,0 +1,48 @@
+<package type="plugin">
+	<name>gallery</name>
+	<title>Image gallery</title>
+	<created>2012-05-11 21:26:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Displays Image Galleries inside articles.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">content</package>
+	</dependencies>
+	<params>
+		<param type="list" name="ordering" default="0" label="ORDERING" description="">
+			<option value="0">NO_ORDERING</option>
+			<option value="1">BY_NAME</option>
+			<option value="2">NEWER_FIRST</option>
+			<option value="3">OLDER_FIRST</option>
+		</param>
+        <param type="text" name="width" default="80" label="WIDTH" description="THUMB_WIDTH" />
+        <param type="text" name="height" default="80" label="HEIGHT" description="THUMB_HEIGHT" />
+		<param type="radio" name="autoplay" default="1" label="AUTOPLAY" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="radio" name="loop" default="0" label="LOOP" description="">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="speed" type="list" default="4" dir="ltr" label="TIMETR_LABEL" description="TIMETR_DESC">
+			<option value="3000">3</option>
+			<option value="4000">4</option>
+			<option value="5000">5</option>
+			<option value="6000">6</option>
+			<option value="7000">7</option>
+			<option value="8000">8</option>
+			<option value="9000">9</option>
+			<option value="10000">10</option>
+			<option value="12000">12</option>
+			<option value="15000">15</option>
+		</param>
+	</params>
+</package>

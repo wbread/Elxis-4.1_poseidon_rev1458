@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_search</name>
+	<title>Search</title>
+	<created>2013-02-24 10:40:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2013 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.1</version>
+	<description><![CDATA[Displays a search box.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+		<package type="component" version="1.x">search</package>
+	</dependencies>
+	<params>
+		<param type="list" name="cache" default="2" dir="rtl" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="1">YES_FOR_VISITORS</option>
+			<option value="2">YES_FOR_ALL</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+		<param type="text" name="width" default="0" dir="ltr" size="5" label="WIDTH" description="BOX_WIDTH_PX" />
+	</params>
+</package>

@@ -1,0 +1,20 @@
+/**
+Elxis CMS
+Module Comments CSS
+Author: Ioannis Sannos
+http://www.elxis.org
+*/
+
+ul.modcomments_wrap, ul.modcomments_wrap li {
+	margin:0; padding:0; list-style:none; border:0;
+}
+ul.modcomments_wrap li { margin: 0 0 15px 0; }
+a.modcomm_title, a.modcomm_title:link, a.modcomm_title:hover, a.modcomm_title:visited, a.modcomm_title:active {
+	display:block; margin:0 0 4px 0; padding:0;
+	font:bold 12px/16px tahoma, verdana, serif; color:#333333; text-decoration:none;	
+}
+a.modcomm_title:hover { text-decoration:underline; }
+.modcomm_head { margin:0; padding:2px; background-color:#eeeeee; overflow:hidden; }
+.modcomm_author { width:49%; float:left; font: normal 11px/14px tahoma, verdana, serif; color:#555555; }
+.modcomm_date { width:49%; float:right; text-align:right; font: normal 11px/14px tahoma, verdana, serif; color:#555555; }
+.modcomm_comment { margin:2px 0 0 0; padding:0; font:normal 12px/16px tahoma, verdana, serif; color:#333; overflow:hidden; text-align:justify; }

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elxisparameters type="component" component="com_content">
+	<params group="PAGE_STYLE" collapsed="0">
+		<param type="list" name="ctg_show" default="-1" label="SHOW_CATEGORY" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">ONLY_TITLE</option>
+			<option value="2">SHOW</option>
+		</param>
+		<param type="previewlist" name="ctg_layout" default="-1" label="LAYOUT" dir="rtl" position="bottom" width="120" height="160" description="LAYOUT_DESC">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0" image="components/com_content/images/layout0.png">FLAT</option>
+			<option value="1" image="components/com_content/images/layout1.png">LAYOUT_LRB</option>
+			<option value="2" image="components/com_content/images/layout2.png">LAYOUT_TLR</option>
+		</param>
+		<param type="list" name="ctg_print" default="-1" label="PRINT" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="list" name="ctg_ordering" default="" label="ARTICLES_ORDER" dir="rtl" description="">
+			<option value="">GLOBAL_SETTING</option>
+			<option value="ca">DATE_CREATED_ASC</option>
+			<option value="cd">DATE_CREATED_DESC</option>
+			<option value="ma">DATE_MODIFIED_ASC</option>
+			<option value="md">DATE_MODIFIED_DESC</option>
+			<option value="oa">ORDERING_ASC</option>
+			<option value="od">ORDERING_DESC</option>
+			<option value="ta">TITLE_ASC</option>
+			<option value="td">TITLE_DESC</option>
+		</param>
+		<param type="list" name="ctg_img_empty" default="-1" label="EMPTY_IMAGE" dir="rtl" description="EMPTY_IMAGE_DESC">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">DONT_DISP_IMAGE</option>
+			<option value="1">DISP_DEFAULT_IMG</option>
+		</param>
+		<param type="position" name="ctg_mods_pos" default="_global_" none="1" global="1" label="INNER_MODS_POS" description="INNER_MODS_POS_DESC" />
+		<param type="list" name="ctg_pagination" default="-1" label="PAGINATION" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="list" name="ctg_nextpages_style" default="-1" label="NEXT_PAGES_STYLE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">FEATURED_ARTICLES</option>
+			<option value="1">SHORT_ARTICLES</option>
+			<option value="2">LINK_ARTICLES</option>
+		</param>
+	</params>
+	<params group="SUBCATEGORIES" collapsed="1">
+		<param type="list" name="ctg_subcategories" default="-1" label="SUBCATEGORIES" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">TOP</option>
+			<option value="2">BOTTOM</option>
+		</param>
+		<param type="list" name="ctg_subcategories_cols" default="-1" label="COLUMNS" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</param>
+	</params>
+	<params group="FEATURED_ARTICLES" collapsed="1">
+		<param type="list" name="ctg_featured_num" default="-1" label="FEATURED_NUMBER" dir="rtl" description="NUMBER_ITEMS_PER_PAGE">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</param>
+		<param type="list" name="ctg_featured_img" default="-1" label="FEATURED_IMAGE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">MEDIUM_IMG_TOP</option>
+			<option value="2">MEDIUM_IMG_LEFT</option>
+			<option value="3">MEDIUM_IMG_RIGHT</option>
+			<option value="4">LARGE_IMG_TOP</option>
+		</param>
+		<param type="list" name="ctg_featured_dateauthor" default="-1" label="DATE_AUTHOR" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">CREATED_DATE</option>
+			<option value="2">CREATED_DATE_AUTHOR</option>
+			<option value="3">MODIFIED_DATE</option>
+			<option value="4">MODIFIED_DATE_AUTHOR</option>
+			<option value="5">AUTO_DATE</option>
+			<option value="6">AUTO_DATE_AUTHOR</option>
+		</param>
+		<param type="list" name="ctg_featured_more" default="-1" label="MORE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+	</params>
+	<params group="SHORT_ARTICLES" collapsed="1">
+		<param type="list" name="ctg_short_num" default="-1" label="SHORT_ARTICLES_NUMBER" dir="rtl" description="NUMBER_ITEMS_PER_PAGE">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</param>
+		<param type="list" name="ctg_short_cols" default="-1" label="COLUMNS" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</param>
+		<param type="list" name="ctg_short_img" default="-1" label="SHORT_IMAGE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">TOP</option>
+			<option value="2">LEFT</option>
+		</param>
+		<param type="list" name="ctg_short_dateauthor" default="-1" label="DATE_AUTHOR" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">CREATED_DATE</option>
+			<option value="2">CREATED_DATE_AUTHOR</option>
+			<option value="3">MODIFIED_DATE</option>
+			<option value="4">MODIFIED_DATE_AUTHOR</option>
+			<option value="5">AUTO_DATE</option>
+			<option value="6">AUTO_DATE_AUTHOR</option>
+		</param>
+		<param type="list" name="ctg_short_text" default="-1" label="SHORT_TEXT" dir="rtl" description="SHORT_TEXT_DESC">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">ONLY_SUBTITLE</option>
+			<option value="100">100</option>
+			<option value="140">140</option>
+			<option value="180">180</option>
+			<option value="220">220</option>
+			<option value="260">260</option>
+			<option value="300">300</option>
+			<option value="340">340</option>
+			<option value="380">380</option>
+			<option value="420">420</option>
+			<option value="460">460</option>
+			<option value="500">500</option>
+			<option value="540">540</option>
+			<option value="580">580</option>
+			<option value="620">620</option>
+			<option value="660">660</option>
+			<option value="700">700</option>
+			<option value="1000">SUBTITLE_INTROTEXT</option>
+		</param>
+		<param type="list" name="ctg_short_more" default="-1" label="MORE" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+	</params>
+	<params group="LINK_ARTICLES" collapsed="1">
+		<param type="list" name="ctg_links_num" default="-1" label="LINKS_NUMBER" dir="rtl" description="NUMBER_ITEMS_PER_PAGE">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</param>
+		<param type="range" name="ctg_links_cols" first="1" last="4" step="1" default="1" label="COLUMNS" description="" />
+		<param type="list" name="ctg_links_header" default="-1" label="HEADER" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">READ_ALSO</option>
+			<option value="2">OTHER_ARTICLES</option>
+		</param>
+		<param type="list" name="ctg_links_dateauthor" default="-1" label="DATE_AUTHOR" dir="rtl" description="">
+			<option value="-1">GLOBAL_SETTING</option>
+			<option value="0">HIDE</option>
+			<option value="1">CREATED_DATE</option>
+			<option value="2">CREATED_DATE_AUTHOR</option>
+			<option value="3">MODIFIED_DATE</option>
+			<option value="4">MODIFIED_DATE_AUTHOR</option>
+			<option value="5">AUTO_DATE</option>
+			<option value="6">AUTO_DATE_AUTHOR</option>
+		</param>
+	</params>
+	<params group="COMMENTS" collapsed="1">
+		<param type="radio" name="comments" default="0" label="COMMENTS" dir="rtl" description="ALLOW_COMMENTS_CATEGORY">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</elxisparameters>

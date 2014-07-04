@@ -1,0 +1,10 @@
+/* Module Ads stylesheet */
+.modads_box { margin:15px 0; padding:0; color:#333; font:normal 13px/17px tahoma, arial, sans-serif; }
+.modads_box_border { background-color:#ffffff; color:#333; margin:0; padding:16px 10px; border:1px solid #ccc; position:relative; border-radius:5px; }
+a.modads_link { color:#26609c !important; text-decoration:none; font:normal 13px/17px tahoma, arial, sans-serif; outline:none; }
+a.modads_link:hover { color:#000 !important; text-decoration:none; }
+.modads_box_mark { margin:0; padding:2px 8px; background-color:#ccc; color:#333; font:normal 11px/11px tahoma, arial, sans-serif; position:absolute; right:0; bottom:0; z-index:2; border-radius:2px; }
+.modads_box_mark:hover { background-color:#aaa; color:#000; }
+.modads_box_mark-rtl { margin:0; padding:2px 8px; background-color:#ccc; color:#333; font:normal 11px/11px tahoma, arial, sans-serif; position:absolute; left:0; bottom:0; z-index:2; border-radius:2px; }
+.modads_box_mark-rtl:hover { background-color:#aaa; color:#000; }
+.modads_box a img { border:none; }

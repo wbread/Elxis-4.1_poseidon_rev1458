@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package type="module">
+	<name>mod_gallery</name>
+	<title>Gallery</title>
+	<created>2012-11-10 08:29:00</created>
+	<author>Elxis Team</author>
+	<authoremail>info@elxis.org</authoremail>
+	<authorurl>http://www.elxis.org</authorurl>
+	<copyright>(C) 2006-2012 Elxis.org. All rights reserved</copyright>
+	<license>Elxis Public License</license>
+	<licenseurl>http://www.elxis.org/elxis-public-license.html</licenseurl>
+	<version>1.0</version>
+	<description><![CDATA[The Gallery module displays a group of thumbnail images taken from a given folder. 
+	You can open images in a light box window, provide an introduction text and an optional link. If the standard cache 
+	is disabled the module will use APC if it is enabled.]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params>
+		<param type="range" name="limit" first="1" last="30" step="1" default="12" label="LIMIT" description="NUMIMG_DISPLAY" />
+		<param type="range" name="width" first="20" last="100" step="5" default="40" label="WIDTH" description="THUMB_WPIXELS" />
+		<param type="text" name="pretext" default="" multilingual="1" dir="rtl" size="60" label="PRETEXT" description="PRETEXT_DESC" />
+		<param type="list" name="ordering" default="0" label="ORDERING" description="">
+			<option value="0">RANDOM</option>
+			<option value="1">BY_NAME</option>
+			<option value="2">NEWER_FIRST</option>
+			<option value="3">OLDER_FIRST</option>
+		</param>
+		<param type="folderlist" name="dir" default="sample_gallery" label="IMAGES_DIR" directory="media/images/" description="IMAGES_DIR_DESC" />
+		<param type="radio" name="lightbox" default="1" label="LIGHTBOX" description="LIGHTBOX_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param type="text" name="link" default="" dir="ltr" size="60" label="LINK" description="LINK_DESC" />
+	</params>
+	<params group="OTHER_OPTIONS" collapsed="0">
+		<param type="radio" name="cache" default="2" label="CACHE" description="ENABLE_CACHE_D">
+			<option value="0">NO</option>
+			<option value="2">YES</option>
+		</param>
+		<param type="list" name="cachetime" default="0" label="CACHE_LIFETIME" description="CACHE_LIFETIME_D">
+			<option value="0">GLOBAL_SETTING</option>
+			<option value="300">5</option>
+			<option value="600">10</option>
+			<option value="900">15</option>
+			<option value="1200">20</option>
+			<option value="1800">30</option>
+			<option value="2700">45</option>
+			<option value="3600">60</option>
+			<option value="7200">120</option>
+			<option value="10800">180</option>
+			<option value="14400">240</option>
+			<option value="18000">300</option>
+			<option value="21600">360</option>
+			<option value="36000">600</option>
+			<option value="43200">720</option>
+			<option value="86400">1440</option>
+			<option value="172800">2880</option>
+		</param>
+		<param type="text" name="css_sfx" default="" dir="ltr" label="CSS_SUFFIX" description="CSS_SUFFIX_D" />
+	</params>
+</package>

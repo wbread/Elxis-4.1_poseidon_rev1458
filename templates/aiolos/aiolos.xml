@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<package type="template" section="frontend">
+	<name>aiolos</name>
+	<title>aiolos</title>
+	<created>2011-12-26 19:40:00</created>
+	<author>Stavros Stratakis</author>
+	<authoremail>info@webgift.gr</authoremail>
+	<authorurl>http://www.webgiftgr.com</authorurl>
+	<copyright>(C) 2009-2012 Webgift web services. All rights reserved</copyright>
+	<license>Creative Commons 3.0 Attribution-ShareAlike Unported</license>
+	<licenseurl>http://creativecommons.org/licenses/by-sa/3.0/</licenseurl>
+	<link></link>
+	<version>1.0</version>
+	<description><![CDATA[Aiolos template is a pre-installed functional template for Elxis 4.x designed and developed by Stratakis Stavros 
+	(<a href="http://www.webgiftgr.com" target="_blank" title="Webgift web services">webgiftgr.com</a>).<br />
+	<a href="../templates/aiolos/images/module_positions.png" title="Aiolos module positions" target="_blank">Template Aiolos module positions and layout.</a>]]></description>
+	<dependencies>
+		<package type="core" version="4.x">elxis</package>
+	</dependencies>
+	<params group="LAYOUT_SETTINGS" groupid="1000" collapsed="0">
+	   <param type="list" name="bgcolor" default="ochre" label="BACKGROUNG_COLOR" description="">
+			<option value="white">WHITE</option>
+			<option value="grey">GREY</option>
+            <option value="lightgreen">LIGHT_GREEN</option>
+            <option value="blue">BLUE</option>
+            <option value="ochre">OCHRE</option>
+		</param>
+		<param type="list" name="width" default="980" label="WIDTH" description="">
+			<option value="940" show="1001,1003">940px</option>
+			<option value="960" show="1001,1003">960px</option>
+			<option value="970" show="1001,1003">970px</option>
+			<option value="980" show="1001,1003">980px</option>
+			<option value="100"  hide="1001,1003">100%</option>
+		</param>
+		<param type="list" name="columns" default="3" label="COLUMNS_LABEL" description="COLUMNS_DESC">
+			<option value="1" hide="1001">1</option>
+			<option value="2" show="1001">2</option>
+			<option value="3" show="1001">3</option>
+		</param>
+        <param type="radio" name="elxpath" default="1" label="DISPLAY_PATHWAY" description="">
+            <option value="0">HIDE</option>
+            <option value="1">SHOW</option>
+        </param> 
+	</params>
+    <params group="LOGO_SETTINGS" groupid="1002" collapsed="0">
+        <param type="file" name="selogo" path="templates/aiolos/images/{multisite/}" filetype="png,jpg,jpeg,gif" maxsize="0" resizewidth="300" resizeheight="75" default="elogo.png" label="UPLOAD" description="UPLOAD_LOGO_DESC" />
+        <param type="text" name="logo_width" default="202" size="5" label="WIDTH" description="LOGO_WIDTH_DESC" />
+        <param type="text" name="logo_height" default="63" size="5" label="HEIGHT" description="LOGO_HEIGHT_DESC" />
+    </params>
+    <params group="ALIGNMENT" groupid="1003" collapsed="0">
+        <param type="list" name="align" default="center" label="ALIGNMENT" description="ALIGNMENT_DESC">
+			<option value="center">CENTER</option>
+			<option value="left">LEFT</option>
+			<option value="right">RIGHT</option>
+		</param>       
+    </params>      
+	<params group="COLUMNS" groupid="1001" collapsed="1">
+		<param type="list" name="col_width" default="180" size="5" label="WIDTH" description="COLUMNS_WIDTH_DESC" >
+			<option value="160">160px</option>
+			<option value="170">170px</option>
+			<option value="180">180px</option>
+			<option value="190">190px</option>
+			<option value="200">200px</option>
+			<option value="210">210px</option>
+			<option value="220">220px</option>
+			<option value="230">230px</option>
+			<option value="240">240px</option>
+		</param> 
+		<param type="list" name="sel_col" default="left" label="SELECT_COLUMN_LABEL" description="SELECT_COLUMN_DESC">
+            <option value="left">LEFT</option>
+            <option value="right">RIGHT</option>
+        </param>        
+	</params>
+</package>
